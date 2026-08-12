@@ -1,0 +1,39 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Teoria atomica}{1}{chapter.1}%
+\contentsline {subsection}{\numberline {1.0.1}Legge di conservazione della massa}{1}{subsection.1.0.1}%
+\contentsline {subsection}{\numberline {1.0.2}Legge delle proporzioni definite}{1}{subsection.1.0.2}%
+\contentsline {subsection}{\numberline {1.0.3}Legge delle proporzioni multiple (o di Dalton)}{2}{subsection.1.0.3}%
+\contentsline {subsection}{\numberline {1.0.4}Principio di Avogadro}{2}{subsection.1.0.4}%
+\contentsline {section}{\numberline {1.1}Modello atomico di Thomson}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Modello atomico di Rutherford}{4}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Modello atomico di Bohr}{5}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Modello atomico di Schrödinger}{6}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}n: Numero quantico principale}{7}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}l: Numero quantico angolare}{7}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}m: Numero quantico magnetico}{7}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}$m_s$: Numero quantico di spin}{7}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Orbitali s}{8}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.6}Orbitali p}{9}{subsection.1.3.6}%
+\contentsline {subsection}{\numberline {1.3.7}Orbitali d}{9}{subsection.1.3.7}%
+\contentsline {subsection}{\numberline {1.3.8}Orbitali f e oltre}{10}{subsection.1.3.8}%
+\contentsline {section}{\numberline {1.4}Riempimento degli orbitali}{10}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Principio di minima energia}{11}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Principio di esclusione di Pauli}{12}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Regole per il riempimento degli orbitali}{12}{subsection.1.4.3}%
+\contentsline {chapter}{\numberline {2}Proprietà degli elementi}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Raggio atomico}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Raggio ionico}{14}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Energia di ionizzazione}{14}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Affinità elettronica}{15}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Metalli, non metalli e semimetalli}{15}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Gruppo 1A: metalli alcalini}{15}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Gruppo 2A: metalli alcalino-terrosi}{16}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Idrogeno}{16}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Gruppo 6A: calcogeni}{16}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}Gruppo 7A: alogeni}{16}{subsection.2.5.5}%
+\contentsline {subsection}{\numberline {2.5.6}Gruppo 8A: gas nobili}{16}{subsection.2.5.6}%
+\contentsline {chapter}{\numberline {3}Legami}{18}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Legame ionico}{18}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Costante di Madelung}{19}{subsection.3.1.1}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
