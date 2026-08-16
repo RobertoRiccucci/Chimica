@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.12)  12 AUG 2026 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.12)  14 AUG 2026 17:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -997,6 +997,10 @@ LaTeX Warning: Label `fig:etichetta' multiply defined.
 
 LaTeX Warning: Label `fig:etichetta' multiply defined.
 
+) (%OUTDIR%/chapters/capitolo_4.aux
+
+LaTeX Warning: Label `fig:etichetta' multiply defined.
+
 ))
 \openout1 = `Chimica.aux'.
 
@@ -1197,15 +1201,15 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-))
+) [2
+
+
+
+{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}])
 \tf@toc=\write4
 \openout4 = `Chimica.toc'.
 
- [2
-
-
-
-{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
+ [3]
 \openout2 = `chapters/capitolo_1.aux'.
 
  (./chapters/capitolo_1.tex
@@ -1347,7 +1351,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
 
-<foto/orbitali_s.png, id=168, 1077.02374pt x 489.83pt>
+<foto/orbitali_s.png, id=246, 1077.02374pt x 489.83pt>
 File: foto/orbitali_s.png Graphic file (type png)
 <use foto/orbitali_s.png>
 Package pdftex.def Info: foto/orbitali_s.png  used on input line 349.
@@ -1357,7 +1361,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 357--359
 
  []
 
-<foto/orbitali_p.png, id=176, 1413.28pt x 452.69125pt>
+<foto/orbitali_p.png, id=254, 1413.28pt x 452.69125pt>
 File: foto/orbitali_p.png Graphic file (type png)
 <use foto/orbitali_p.png>
 Package pdftex.def Info: foto/orbitali_p.png  used on input line 362.
@@ -1397,7 +1401,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--400
 
  []
 
-<foto/ordine_orbitali.png, id=184, 710.655pt x 829.0975pt>
+<foto/ordine_orbitali.png, id=262, 710.655pt x 829.0975pt>
 File: foto/ordine_orbitali.png Graphic file (type png)
 <use foto/ordine_orbitali.png>
 Package pdftex.def Info: foto/ordine_orbitali.png  used on input line 405.
@@ -1547,7 +1551,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
 
 ]
-<foto/reticolo_1D.png, id=241, 1252.68pt x 369.38pt>
+<foto/reticolo_1D.png, id=320, 1252.68pt x 369.38pt>
 File: foto/reticolo_1D.png Graphic file (type png)
 <use foto/reticolo_1D.png>
 Package pdftex.def Info: foto/reticolo_1D.png  used on input line 43.
@@ -1562,12 +1566,253 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--66
 
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 67--53
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-[19 <./foto/reticolo_1D.png>] (%OUTDIR%/Chimica.aux (%OUTDIR%/chapters/capitolo_1.aux) (%OUTDIR%/chapters/capitolo_2.aux) (%OUTDIR%/chapters/capitolo_3.aux))
+[19 <./foto/reticolo_1D.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
+
+ []
+
+
+Overfull \hbox (2.44823pt too wide) in paragraph at lines 143--143
+[]\T1/lmr/m/it/9 (-20) elettronegatività  
+ []
+
+[21]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 160.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sigma' on input line 160.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 160.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 160.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\pi' on input line 160.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 160.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
+ []
+
+[23]
+Overfull \hbox (4.19992pt too wide) in paragraph at lines 211--211
+[]\T1/lmr/m/it/9 (-20) paramagnetismo  
+ []
+
+
+Overfull \hbox (6.1761pt too wide) in paragraph at lines 211--211
+[]\T1/lmr/m/it/9 (-20) ferromagnetismo  
+ []
+
+
+LaTeX Warning: Marginpar on page 24 moved.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
+
+ []
+
+[26]
+Overfull \hbox (56.22559pt too wide) in paragraph at lines 361--362
+[][] 
+ []
+
+[27] [28] [29] [30] [31]
+Overfull \hbox (72.88704pt too wide) in paragraph at lines 658--659
+ [] 
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 710--711
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 713--715
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 733--734
+
+ []
+
+) [34]
+\openout2 = `chapters/capitolo_4.aux'.
+
+ (./chapters/capitolo_4.tex
+chapter 4.
+
+Class scrbook Warning: Redefinition of \@makechapterhead detected.
+(scrbook)              Note: KOMA-Script does use styles for commands like
+(scrbook)              \chapter. Currently it internally still provides and
+(scrbook)              uses \@makechapterhead, but a completely different
+(scrbook)              definition compared to the standard classes.
+(scrbook)              So redefining or using internal \@makechapterhead
+(scrbook)              by users or package authors may already break
+(scrbook)              KOMA-Script and will not work with a coming version,
+(scrbook)              that will remove this deprecated code.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+[35
+
+
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+[38]
+<foto/VSEPR.png, id=444, 694.595pt x 551.05875pt>
+File: foto/VSEPR.png Graphic file (type png)
+<use foto/VSEPR.png>
+Package pdftex.def Info: foto/VSEPR.png  used on input line 232.
+(pdftex.def)             Requested size: 375.57639pt x 297.97089pt.
+ [39 <./foto/VSEPR.png>]) [40] (%OUTDIR%/Chimica.aux (%OUTDIR%/chapters/capitolo_1.aux) (%OUTDIR%/chapters/capitolo_2.aux) (%OUTDIR%/chapters/capitolo_3.aux) (%OUTDIR%/chapters/capitolo_4.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1578,18 +1823,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 57738 strings out of 467525
- 1376207 string characters out of 5418982
- 2214999 words of memory out of 5000000
- 85658 multiletter control sequences out of 15000+600000
- 742696 words of font info for 231 fonts, out of 8000000 for 9000
+ 58214 strings out of 467525
+ 1383988 string characters out of 5418982
+ 2225393 words of memory out of 5000000
+ 86024 multiletter control sequences out of 15000+600000
+ 743734 words of font info for 242 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,12n,110p,11318b,1153s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on %OUTDIR%/Chimica.pdf (21 pages, 834843 bytes).
+ 115i,14n,110p,11318b,1357s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on %OUTDIR%/Chimica.pdf (43 pages, 1024885 bytes).
 PDF statistics:
- 480 PDF objects out of 1000 (max. 8388607)
- 399 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 500000)
- 63814 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 829 PDF objects out of 1000 (max. 8388607)
+ 714 compressed objects within 8 object streams
+ 173 named destinations out of 1000 (max. 500000)
+ 64115 words of extra memory for PDF output out of 74296 (max. 10000000)
 

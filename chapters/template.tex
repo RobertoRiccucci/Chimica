@@ -196,6 +196,22 @@
 
 \newcommand{\eps}{\varepsilon}
 
+\newcommand{\atomo}[3]{\node[inner sep=1.5pt] (#1) at (#2) {$\mathrm{#3}$};}
+ 
+\newcommand{\doppietto}[2]{%
+  \foreach \s in {-1,1}{
+    \fill ($(#1)+({#2}:0.30)+({#2+90}:{0.055*\s})$) circle (0.9pt);}}
+ 
+% \legame{a}{b}{molteplicita}{gioco}
+\newcommand{\legame}[4]{%
+  \ifcase#3\or
+    \draw[line width=0.55pt,shorten <=#4,shorten >=#4] (#1)--(#2);\or
+    \draw[line width=0.55pt,double,double distance=1.5pt,
+          shorten <=#4,shorten >=#4] (#1)--(#2);\or
+    \draw[line width=0.55pt,double,double distance=2.8pt,
+          shorten <=#4,shorten >=#4] (#1)--(#2);
+    \draw[line width=0.55pt,shorten <=#4,shorten >=#4] (#1)--(#2);\fi}
+
 \theoremstyle{definition}
 \newtheorem{definizione}{Definizione}[chapter]
 \newtheorem{esempio}[definizione]{Esempio}
@@ -212,7 +228,7 @@
 % \addbibresource{chapters/bibliografia.bib}
 
 % ---------- FRONTESPIZIO ----------
-\title{\textbf{Esperienze di Laboratorio 2}}
+\title{\textbf{Chimica Generale}}
 \author{Roberto Riccucci}
 \date{}
 

@@ -36,4 +36,41 @@
 \contentsline {chapter}{\numberline {3}Legami}{18}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Legame ionico}{18}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Costante di Madelung}{19}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Legame covalente}{20}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Interpretazione ondulatoria}{20}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Energia e lunghezza di legame}{20}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Covalenza}{21}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Legami multipli}{21}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Polarità del legame}{21}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Legami $\sigma $ e $\pi $}{22}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}Legame metallico}{23}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Eccezioni alla regola dell'ottetto}{23}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Molecole con numero dispari di elettroni}{23}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Ottetto incompleto}{24}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Espansione dell'ottetto}{25}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Ioni privi di configurazione di gas nobile}{25}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}Orbitali ibridi}{27}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Costruzione degli orbitali ibridi}{27}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Forma e proprietà degli ibridi}{27}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Osservazioni sul significato dell'ibridazione}{28}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6}Orbitali molecolari}{29}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Il metodo LCAO}{29}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Determinazione dei coefficienti}{29}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Legame e antilegame}{30}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Classificazione e ordine di legame}{31}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.5}Costruzione e impiego dei diagrammi}{31}{subsection.3.6.5}%
+\contentsline {subsection}{\numberline {3.6.6}Regole di combinazione}{33}{subsection.3.6.6}%
+\contentsline {subsection}{\numberline {3.6.7}Riempimento e casi notevoli}{33}{subsection.3.6.7}%
+\contentsline {subsection}{\numberline {3.6.8}Molecole eteronucleari}{34}{subsection.3.6.8}%
+\contentsline {chapter}{\numberline {4}Rappresentazione delle molecole}{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Strutture di Lewis}{35}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Procedura di costruzione}{35}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Carica formale}{36}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Risonanza}{36}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Limiti della rappresentazione}{37}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Teoria VSEPR}{38}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Numero sterico}{38}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Geometria molecolare}{38}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Deviazioni dagli angoli ideali}{40}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Limiti della teoria}{40}{subsection.4.2.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
