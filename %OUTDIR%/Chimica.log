@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.12)  14 AUG 2026 17:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.12)  18 AUG 2026 12:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -986,7 +986,7 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (%OUTDIR%/Chimica.aux (%OUTDIR%/chapters/capitolo_1.aux
+) (%OUTDIR%/Chimica.aux (%OUTDIR%/chapters/preface.aux) (%OUTDIR%/chapters/capitolo_1.aux
 
 LaTeX Warning: Label `fig:etichetta' multiply defined.
 
@@ -1147,6 +1147,89 @@ Package pdftex.def Info: foto/mo.png  used on input line 29.
 
 
 {/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./foto/mo.png>]
+\openout2 = `chapters/preface.aux'.
+
+ (./chapters/preface.tex
+chapter without number
+
+Class scrbook Warning: Redefinition of \@makechapterhead detected.
+(scrbook)              Note: KOMA-Script does use styles for commands like
+(scrbook)              \chapter. Currently it internally still provides and
+(scrbook)              uses \@makechapterhead, but a completely different
+(scrbook)              definition compared to the standard classes.
+(scrbook)              So redefining or using internal \@makechapterhead
+(scrbook)              by users or package authors may already break
+(scrbook)              KOMA-Script and will not work with a coming version,
+(scrbook)              that will remove this deprecated code.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 11.
+(/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 11.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 11.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 11.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 11.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 11.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 11.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 11.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+) [2
+
+
+
+
+]
 
 Class scrbook Warning: Redefinition of \@makeschapterhead detected.
 (scrbook)              Note: KOMA-Script does use styles for commands like
@@ -1158,7 +1241,7 @@ Class scrbook Warning: Redefinition of \@makeschapterhead detected.
 (scrbook)              KOMA-Script and will not work with a coming version,
 (scrbook)              that will remove this deprecated code.
 
-Package tocbasic Info: character protrusion at toc deactivated on input line 43.
+Package tocbasic Info: character protrusion at toc deactivated on input line 45.
 (%OUTDIR%/Chimica.toc
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/t1lmss.fd
@@ -1168,40 +1251,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4.
- (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4.
- (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 4.
- (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 4.
- (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 4.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 4.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 4.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
- (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
- (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [2
+ [3
+
 
 
 
@@ -1209,7 +1260,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \tf@toc=\write4
 \openout4 = `Chimica.toc'.
 
- [3]
+ [4]
 \openout2 = `chapters/capitolo_1.aux'.
 
  (./chapters/capitolo_1.tex
@@ -1351,7 +1402,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
 
-<foto/orbitali_s.png, id=246, 1077.02374pt x 489.83pt>
+<foto/orbitali_s.png, id=254, 1077.02374pt x 489.83pt>
 File: foto/orbitali_s.png Graphic file (type png)
 <use foto/orbitali_s.png>
 Package pdftex.def Info: foto/orbitali_s.png  used on input line 349.
@@ -1361,7 +1412,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 357--359
 
  []
 
-<foto/orbitali_p.png, id=254, 1413.28pt x 452.69125pt>
+<foto/orbitali_p.png, id=262, 1413.28pt x 452.69125pt>
 File: foto/orbitali_p.png Graphic file (type png)
 <use foto/orbitali_p.png>
 Package pdftex.def Info: foto/orbitali_p.png  used on input line 362.
@@ -1401,7 +1452,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--400
 
  []
 
-<foto/ordine_orbitali.png, id=262, 710.655pt x 829.0975pt>
+<foto/ordine_orbitali.png, id=271, 710.655pt x 829.0975pt>
 File: foto/ordine_orbitali.png Graphic file (type png)
 <use foto/ordine_orbitali.png>
 Package pdftex.def Info: foto/ordine_orbitali.png  used on input line 405.
@@ -1551,7 +1602,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
 
 ]
-<foto/reticolo_1D.png, id=320, 1252.68pt x 369.38pt>
+<foto/reticolo_1D.png, id=328, 1252.68pt x 369.38pt>
 File: foto/reticolo_1D.png Graphic file (type png)
 <use foto/reticolo_1D.png>
 Package pdftex.def Info: foto/reticolo_1D.png  used on input line 43.
@@ -1807,12 +1858,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--199
  []
 
 [38]
-<foto/VSEPR.png, id=444, 694.595pt x 551.05875pt>
+<foto/VSEPR.png, id=452, 694.595pt x 551.05875pt>
 File: foto/VSEPR.png Graphic file (type png)
 <use foto/VSEPR.png>
 Package pdftex.def Info: foto/VSEPR.png  used on input line 232.
 (pdftex.def)             Requested size: 375.57639pt x 297.97089pt.
- [39 <./foto/VSEPR.png>]) [40] (%OUTDIR%/Chimica.aux (%OUTDIR%/chapters/capitolo_1.aux) (%OUTDIR%/chapters/capitolo_2.aux) (%OUTDIR%/chapters/capitolo_3.aux) (%OUTDIR%/chapters/capitolo_4.aux))
+ [39 <./foto/VSEPR.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+
+ []
+
+) [40] (%OUTDIR%/Chimica.aux (%OUTDIR%/chapters/preface.aux) (%OUTDIR%/chapters/capitolo_1.aux) (%OUTDIR%/chapters/capitolo_2.aux) (%OUTDIR%/chapters/capitolo_3.aux) (%OUTDIR%/chapters/capitolo_4.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1823,18 +1879,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 58214 strings out of 467525
- 1383988 string characters out of 5418982
+ 58298 strings out of 467525
+ 1385677 string characters out of 5418982
  2225393 words of memory out of 5000000
- 86024 multiletter control sequences out of 15000+600000
- 743734 words of font info for 242 fonts, out of 8000000 for 9000
+ 86090 multiletter control sequences out of 15000+600000
+ 744335 words of font info for 246 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,14n,110p,11318b,1357s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on %OUTDIR%/Chimica.pdf (43 pages, 1024885 bytes).
+ 115i,14n,110p,11318b,1345s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on %OUTDIR%/Chimica.pdf (44 pages, 1050444 bytes).
 PDF statistics:
- 829 PDF objects out of 1000 (max. 8388607)
- 714 compressed objects within 8 object streams
- 173 named destinations out of 1000 (max. 500000)
- 64115 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 843 PDF objects out of 1000 (max. 8388607)
+ 725 compressed objects within 8 object streams
+ 174 named destinations out of 1000 (max. 500000)
+ 64635 words of extra memory for PDF output out of 74296 (max. 10000000)
 

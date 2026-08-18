@@ -1,5 +1,6 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
+\contentsline {chapter}{\nonumberline Prefazione}{ii}{chapter*.1}%
 \contentsline {chapter}{\numberline {1}Teoria atomica}{1}{chapter.1}%
 \contentsline {subsection}{\numberline {1.0.1}Legge di conservazione della massa}{1}{subsection.1.0.1}%
 \contentsline {subsection}{\numberline {1.0.2}Legge delle proporzioni definite}{1}{subsection.1.0.2}%
