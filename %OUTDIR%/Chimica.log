@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.12)  18 AUG 2026 12:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.12)  19 AUG 2026 11:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1001,7 +1001,7 @@ LaTeX Warning: Label `fig:etichetta' multiply defined.
 
 LaTeX Warning: Label `fig:etichetta' multiply defined.
 
-))
+) (%OUTDIR%/chapters/capitolo_5.aux))
 \openout1 = `Chimica.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -1402,7 +1402,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
 
-<foto/orbitali_s.png, id=254, 1077.02374pt x 489.83pt>
+<foto/orbitali_s.png, id=280, 1077.02374pt x 489.83pt>
 File: foto/orbitali_s.png Graphic file (type png)
 <use foto/orbitali_s.png>
 Package pdftex.def Info: foto/orbitali_s.png  used on input line 349.
@@ -1412,7 +1412,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 357--359
 
  []
 
-<foto/orbitali_p.png, id=262, 1413.28pt x 452.69125pt>
+<foto/orbitali_p.png, id=288, 1413.28pt x 452.69125pt>
 File: foto/orbitali_p.png Graphic file (type png)
 <use foto/orbitali_p.png>
 Package pdftex.def Info: foto/orbitali_p.png  used on input line 362.
@@ -1452,7 +1452,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--400
 
  []
 
-<foto/ordine_orbitali.png, id=271, 710.655pt x 829.0975pt>
+<foto/ordine_orbitali.png, id=297, 710.655pt x 829.0975pt>
 File: foto/ordine_orbitali.png Graphic file (type png)
 <use foto/ordine_orbitali.png>
 Package pdftex.def Info: foto/ordine_orbitali.png  used on input line 405.
@@ -1602,7 +1602,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
 
 ]
-<foto/reticolo_1D.png, id=328, 1252.68pt x 369.38pt>
+<foto/reticolo_1D.png, id=354, 1252.68pt x 369.38pt>
 File: foto/reticolo_1D.png Graphic file (type png)
 <use foto/reticolo_1D.png>
 Package pdftex.def Info: foto/reticolo_1D.png  used on input line 43.
@@ -1858,7 +1858,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--199
  []
 
 [38]
-<foto/VSEPR.png, id=452, 694.595pt x 551.05875pt>
+<foto/VSEPR.png, id=478, 694.595pt x 551.05875pt>
 File: foto/VSEPR.png Graphic file (type png)
 <use foto/VSEPR.png>
 Package pdftex.def Info: foto/VSEPR.png  used on input line 232.
@@ -1868,7 +1868,91 @@ Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
-) [40] (%OUTDIR%/Chimica.aux (%OUTDIR%/chapters/preface.aux) (%OUTDIR%/chapters/capitolo_1.aux) (%OUTDIR%/chapters/capitolo_2.aux) (%OUTDIR%/chapters/capitolo_3.aux) (%OUTDIR%/chapters/capitolo_4.aux))
+) [40]
+\openout2 = `chapters/capitolo_5.aux'.
+
+ (./chapters/capitolo_5.tex
+chapter 5.
+
+Class scrbook Warning: Redefinition of \@makechapterhead detected.
+(scrbook)              Note: KOMA-Script does use styles for commands like
+(scrbook)              \chapter. Currently it internally still provides and
+(scrbook)              uses \@makechapterhead, but a completely different
+(scrbook)              definition compared to the standard classes.
+(scrbook)              So redefining or using internal \@makechapterhead
+(scrbook)              by users or package authors may already break
+(scrbook)              KOMA-Script and will not work with a coming version,
+(scrbook)              that will remove this deprecated code.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
+
+ []
+
+[41
+
+
+
+
+
+]
+
+LaTeX Warning: Marginpar on page 42 moved.
+
+[42]
+
+LaTeX Warning: Marginpar on page 43 moved.
+
+[43]
+
+LaTeX Warning: Marginpar on page 44 moved.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
+
+ []
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
+
+ []
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 354--357
+
+ []
+
+[47]
+Overfull \hbox (16.08208pt too wide) in paragraph at lines 382--395
+ [][] 
+ []
+
+) [48] (%OUTDIR%/Chimica.aux (%OUTDIR%/chapters/preface.aux) (%OUTDIR%/chapters/capitolo_1.aux) (%OUTDIR%/chapters/capitolo_2.aux) (%OUTDIR%/chapters/capitolo_3.aux) (%OUTDIR%/chapters/capitolo_4.aux) (%OUTDIR%/chapters/capitolo_5.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1879,18 +1963,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 58298 strings out of 467525
- 1385677 string characters out of 5418982
- 2225393 words of memory out of 5000000
- 86090 multiletter control sequences out of 15000+600000
- 744335 words of font info for 246 fonts, out of 8000000 for 9000
+ 58743 strings out of 467525
+ 1394572 string characters out of 5418982
+ 2243234 words of memory out of 5000000
+ 86488 multiletter control sequences out of 15000+600000
+ 744501 words of font info for 248 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,14n,110p,11318b,1345s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on %OUTDIR%/Chimica.pdf (44 pages, 1050444 bytes).
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on %OUTDIR%/Chimica.pdf (52 pages, 1096078 bytes).
 PDF statistics:
- 843 PDF objects out of 1000 (max. 8388607)
- 725 compressed objects within 8 object streams
- 174 named destinations out of 1000 (max. 500000)
- 64635 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 974 PDF objects out of 1000 (max. 8388607)
+ 845 compressed objects within 9 object streams
+ 210 named destinations out of 1000 (max. 500000)
+ 64739 words of extra memory for PDF output out of 74296 (max. 10000000)
 

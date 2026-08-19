@@ -74,4 +74,17 @@
 \contentsline {subsection}{\numberline {4.2.2}Geometria molecolare}{38}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Deviazioni dagli angoli ideali}{40}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Limiti della teoria}{40}{subsection.4.2.4}%
+\contentsline {chapter}{\numberline {5}Interazioni intermolecolari}{41}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Interazioni ione-dipolo}{41}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Interazioni fra dipoli permanenti}{42}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Dipoli indotti e polarizzabilità}{42}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Interazione ione-dipolo indotto}{43}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Interazione dipolo-dipolo indotto}{43}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Forze di dispersione di London}{44}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Repulsione a corto raggio e potenziale di Lennard-Jones}{44}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Il legame a idrogeno}{45}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Perché il legame a idrogeno è così forte}{46}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}La componente covalente}{46}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Il ghiaccio}{47}{subsection.5.6.3}%
+\contentsline {section}{\numberline {5.7}Quadro riassuntivo}{48}{section.5.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

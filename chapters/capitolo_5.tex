@@ -1,1 +1,397 @@
-\chapter{}
+\chapter{Interazioni intermolecolari}
+
+Tutto quanto discusso finora riguarda le forze intramolecolari\mkeyword{forze intramolecolari}, cioè i legami covalenti che tengono uniti gli atomi all'interno di una molecola.
+Resta però da spiegare perché due molecole distinte, già sature dal punto di vista della valenza, si attraggano comunque.
+Se così non fosse nessun gas condenserebbe. Le interazioni responsabili di questa coesione residua si dicono forze intermolecolari\mkeyword{forze intermolecolari}, e sono di natura elettrostatica ma indiretta: nascono tutte dall'accoppiamento fra distribuzioni di carica non uniformi, permanenti o transitorie.\\
+
+L'ordine di grandezza è quello che ci si aspetta da un effetto residuo, cioè qualche $kJ/mol$ contro le centinaia di $kJ/mol$ di un legame covalente.
+Questa gerarchia ha una conseguenza operativa immediata: quando una sostanza molecolare fonde o evapora si rompono le interazioni intermolecolari e non i legami covalenti, che restano intatti.\\
+
+Da qui segue anche il criterio di confronto usato in laboratorio.
+A parità di peso molecolare, temperature di fusione ed ebollizione più alte segnalano interazioni intermolecolari più intense.
+La grandezza fisicamente rilevante è la polarizzabilità\mkeyword{polarizzabilità}, che a sua volta cresce con il numero di elettroni e quindi, indirettamente, con il peso molecolare: la massa in sé non compare in nessuna delle espressioni che ricaveremo.
+
+\section{Interazioni ione-dipolo}
+
+L'interazione più intensa fra le forze intermolecolari è quella ione-dipolo\mkeyword{interazione ione-dipolo}, che si stabilisce fra la carica netta di uno ione e la carica parziale di una molecola polare.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[>={Latex[length=2mm]}]
+        % --- macro riutilizzabili -----------------------------------------
+        \def\ione#1{%
+            \draw (#1) circle (0.45);
+            \node at (#1) {$+$};
+        }
+        \def\dipolo#1#2{%
+            \begin{scope}[shift={(#1)}]
+                \draw (0,0) ellipse (0.80 and 0.45);
+                \draw[->] ({-0.45*#2},0) -- ({0.45*#2},0);
+                \node[font=\footnotesize, anchor=south] at ({-0.62*#2},0.52) {$\delta^{+}$};
+                \node[font=\footnotesize, anchor=south] at ({0.62*#2},0.52) {$\delta^{-}$};
+            \end{scope}
+        }
+        \def\interazione#1#2{\draw[dotted, thick] (#1,0) -- (#2,0);}
+        % --- disegno ------------------------------------------------------
+        \ione{0,0}
+        \interazione{0.45}{1.80}
+        \dipolo{2.60,0}{-1}
+    \end{tikzpicture}
+    \caption{Interazione ione-dipolo.}
+    \label{fig:ione-dipolo}
+\end{figure}
+
+L'energia di interazione ha la forma
+
+\begin{equation}
+    U_{\text{ione-dipolo}} = -\frac{q\mu\cos\theta}{4\pi\varepsilon_0 r^2},
+    \label{eq:ionedipolo}
+\end{equation}
+
+dove $\theta$ è l'angolo fra l'asse del dipolo e la congiungente.
+Il decadimento come $r^{-2}$, molto più lento di quello di tutte le altre interazioni intermolecolari, spiega da solo perché questa sia la più forte del gruppo e perché il suo raggio d'azione sia il più esteso.
+
+\section{Interazioni fra dipoli permanenti}
+
+Fra due molecole polari e complessivamente neutre si stabilisce l'interazione dipolo-dipolo\mkeyword{interazione dipolo-dipolo}, o forza di Keesom\mkeyword{forza di Keesom}, per cui l'estremità positiva di una molecola tende ad avvicinarsi a quella negativa dell'altra.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[>={Latex[length=2mm]}]
+        % --- macro riutilizzabili -----------------------------------------
+        \def\dipolo#1#2{%
+            \begin{scope}[shift={(#1)}]
+                \draw (0,0) ellipse (0.80 and 0.45);
+                \draw[->] ({-0.45*#2},0) -- ({0.45*#2},0);
+                \node[font=\footnotesize, anchor=south] at ({-0.62*#2},0.52) {$\delta^{+}$};
+                \node[font=\footnotesize, anchor=south] at ({0.62*#2},0.52) {$\delta^{-}$};
+            \end{scope}
+        }
+        \def\interazione#1#2{\draw[dotted, thick] (#1,0) -- (#2,0);}
+        % --- disegno ------------------------------------------------------
+        \dipolo{0,0}{1}
+        \interazione{0.80}{2.20}
+        \dipolo{3.00,0}{1}
+    \end{tikzpicture}
+    \caption{Interazione dipolo-dipolo.}
+    \label{fig:dipolo-dipolo}
+\end{figure}
+
+Nel solido, dove le molecole sono bloccate in un reticolo regolare, l'orientazione è ottimale e l'interazione è massimizzata; nel liquido l'ordine è solo locale e parziale, ma sufficiente a rendere il liquido polare più coeso di un apolare di pari massa.
+
+L'energia di interazione ha la forma 
+
+\begin{equation}
+    \langle U \rangle_{\text{Keesom}} = -\frac{2}{3}\,\frac{\mu_1^2\mu_2^2}{(4\pi\varepsilon_0)^2 k_B T}\,\frac{1}{r^6}.
+    \label{eq:keesom}
+\end{equation}
+
+È l'unico dei contributi intermolecolari a dipendere esplicitamente da $T$, e questa dipendenza è ciò che permette di separarlo sperimentalmente dagli altri misurando il secondo coefficiente del viriale a temperature diverse.
+
+\section{Dipoli indotti e polarizzabilità}
+
+Una molecola immersa in un campo elettrico $\mathbf{E}$ vede la propria nuvola elettronica deformarsi rispetto alla posizione dei nuclei, e acquista di conseguenza un momento di dipolo che, per campi non troppo intensi, è lineare nel campo:
+
+\begin{equation}
+    \boldsymbol{\mu}_{\text{ind}} = \alpha\mathbf{E} \qquad \alpha = \left.\frac{\partial\mu}{\partial E}\right|_{E=0}
+    \label{eq:polarizzabilita}
+\end{equation}
+
+La costante $\alpha$ si dice polarizzabilità\mkeyword{polarizzabilità} e misura quanto la distribuzione elettronica sia cedevole.
+La \eqref{eq:polarizzabilita} va letta come il primo termine di uno sviluppo in serie del momento di dipolo nel campo, ed è per questo che la definizione corretta di $\alpha$ è quella come derivata calcolata a campo nullo; i termini successivi, detti iperpolarizzabilità, diventano rilevanti solo nei campi intensi dell'ottica non lineare.
+
+L'andamento periodico di $\alpha$ segue dal fatto che a essere deformata è la parte più esterna e meno trattenuta della nuvola.
+Scendendo lungo un gruppo la polarizzabilità cresce, perché gli elettroni di valenza si trovano in gusci sempre più lontani dal nucleo; lungo un periodo diminuisce, perché $Z_{\text{eff}}$ aumenta e il raggio atomico si contrae.
+
+\newpage
+
+Su questo meccanismo si innestano due interazioni.
+
+\subsection{Interazione ione-dipolo indotto}
+
+L'interazione ione-dipolo indotto\mkeyword{ione-dipolo indotto} si ha quando uno ione polarizza una molecola apolare
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[>={Latex[length=2mm]}]
+        % --- macro riutilizzabili -----------------------------------------
+        \def\ione#1{%
+            \draw (#1) circle (0.45);
+            \node at (#1) {$+$};
+        }
+        \def\dipoloind#1#2{%
+            \begin{scope}[shift={(#1)}]
+                \draw[dashed] (0,0) circle (0.62);
+                \draw (0,0) ellipse (0.98 and 0.39);
+                \draw[->] ({-0.55*#2},0) -- ({0.55*#2},0);
+                \node[font=\footnotesize, anchor=south] at ({-0.75*#2},0.66) {$\delta^{+}$};
+                \node[font=\footnotesize, anchor=south] at ({0.75*#2},0.66) {$\delta^{-}$};
+            \end{scope}
+        }
+        \def\interazione#1#2{\draw[dotted, thick] (#1,0) -- (#2,0);}
+        % --- disegno ------------------------------------------------------
+        \ione{0,0}
+        \interazione{0.45}{1.77}
+        \dipoloind{2.75,0}{-1}
+    \end{tikzpicture}
+    \caption{Interazione ione-dipolo indotto.
+    La circonferenza tratteggiata indica la forma della nuvola elettronica in assenza dello ione.}
+    \label{fig:ione-dipolo-indotto}
+\end{figure}
+
+Un esempio di questa interazione si ha nel caso di $\mathrm{O_2}$ legato allo ione $Fe^{2+}$ dell'emoglobina.
+
+\subsection{Interazione dipolo-dipolo indotto}
+
+L'interazione dipolo-dipolo indotto\mkeyword{dipolo-dipolo indotto}, o forza di Debye\mkeyword{forza di Debye}, è l'analogo con un dipolo permanente al posto dello ione
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[>={Latex[length=2mm]}]
+        % --- macro riutilizzabili -----------------------------------------
+        \def\dipolo#1#2{%
+            \begin{scope}[shift={(#1)}]
+                \draw (0,0) ellipse (0.80 and 0.45);
+                \draw[->] ({-0.45*#2},0) -- ({0.45*#2},0);
+                \node[font=\footnotesize, anchor=south] at ({-0.62*#2},0.52) {$\delta^{+}$};
+                \node[font=\footnotesize, anchor=south] at ({0.62*#2},0.52) {$\delta^{-}$};
+            \end{scope}
+        }
+        \def\dipoloind#1#2{%
+            \begin{scope}[shift={(#1)}]
+                \draw[dashed] (0,0) circle (0.62);
+                \draw (0,0) ellipse (0.98 and 0.39);
+                \draw[->] ({-0.55*#2},0) -- ({0.55*#2},0);
+                \node[font=\footnotesize, anchor=south] at ({-0.75*#2},0.66) {$\delta^{+}$};
+                \node[font=\footnotesize, anchor=south] at ({0.75*#2},0.66) {$\delta^{-}$};
+            \end{scope}
+        }
+        \def\interazione#1#2{\draw[dotted, thick] (#1,0) -- (#2,0);}
+        % --- disegno ------------------------------------------------------
+        \dipolo{0,0}{1}
+        \interazione{0.80}{2.17}
+        \dipoloind{3.15,0}{1}
+    \end{tikzpicture}
+    \caption{Interazione dipolo-dipolo indotto}
+    \label{fig:dipolo-dipolo-indotto}
+\end{figure}
+
+L'energia di interazione ha la forma 
+
+\begin{equation}
+    U_{\text{Debye}} = -\frac{\mu_1^2\alpha_2 + \mu_2^2\alpha_1}{(4\pi\varepsilon_0)^2}\,\frac{1}{r^6}.
+    \label{eq:debye}
+\end{equation}
+
+A differenza della \eqref{eq:keesom} non compare alcuna dipendenza dalla temperatura, perché il dipolo indotto segue istantaneamente l'orientazione del campo e non può essere randomizzato dall'agitazione termica.
+
+\newpage
+
+\section{Forze di dispersione di London}
+
+Il contributo di gran lunga più importante è quello delle forze di dispersione\mkeyword{forze di dispersione}, dette anche forze di London\mkeyword{forze di London}.
+
+Il meccanismo è il seguente: in un dato istante la nuvola elettronica di un atomo, pur essendo mediamente sferica, si trova per fluttuazione spostata da un lato, generando un dipolo istantaneo che polarizza il vicino, e i due dipoli così correlati si attraggono.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[>={Latex[length=2mm]}]
+        % --- macro riutilizzabili -----------------------------------------
+        \def\apolare#1{\draw (#1) circle (0.62);}
+        \def\dipoloist#1#2{%
+            \begin{scope}[shift={(#1)}]
+                \draw[dashed] (0,0) circle (0.62);
+                \draw (0,0) ellipse (0.98 and 0.39);
+                \draw[->] ({-0.55*#2},0) -- ({0.55*#2},0);
+                \node[font=\footnotesize, anchor=south] at ({-0.75*#2},0.66) {$\delta^{+}$};
+                \node[font=\footnotesize, anchor=south] at ({0.75*#2},0.66) {$\delta^{-}$};
+            \end{scope}
+        }
+        \def\interazione#1#2{\draw[dotted, thick] (#1,0) -- (#2,0);}
+        % --- pannello (a): nuvole imperturbate ----------------------------
+        \apolare{0,0}
+        \interazione{0.62}{2.18}
+        \apolare{2.80,0}
+        \node[font=\footnotesize] at (1.40,-1.55) {(a)};
+        % --- pannello (b): fluttuazione e induzione -----------------------
+        \dipoloist{6.20,0}{1}
+        \interazione{7.18}{8.02}
+        \dipoloist{9.00,0}{1}
+        \node[font=\footnotesize] at (7.60,-1.55) {(b)};
+        \node[font=\footnotesize, anchor=north] at (6.20,-0.80) {istantaneo};
+        \node[font=\footnotesize, anchor=north] at (9.00,-0.80) {indotto};
+    \end{tikzpicture}
+    \caption{Forza di dispersione di London.}
+    \label{fig:dispersione}
+\end{figure}
+
+
+Poiché il meccanismo non richiede alcun dipolo permanente, queste forze sono universali e agiscono fra qualunque coppia di sistemi, atomi di gas nobile inclusi.\\
+
+Come nei casi precedenti si ottiene ancora un decadimento come $r^{-6}$ e per due sistemi identici di energia di ionizzazione $I$ si ha
+
+\begin{equation}
+    U_{\text{London}} = -\frac{3}{4}\,\frac{I\alpha^2}{(4\pi\varepsilon_0)^2}\,\frac{1}{r^6}.
+    \label{eq:london}
+\end{equation}
+
+Le forze di London sono le più deboli soltanto nel confronto fra molecole piccole e fortemente polari, dove il termine di Keesom domina; già per $\mathrm{HCl}$ la dispersione contribuisce per circa quattro volte il termine dipolo-dipolo, e per molecole grandi diventa l'unico contributo che conti davvero.
+
+\section{Repulsione a corto raggio e potenziale di Lennard-Jones}
+
+L'attrazione da sola porterebbe al collasso, quindi deve esistere un termine repulsivo che diventa dominante a piccole distanze.
+La sua origine è il principio di esclusione di Pauli\mkeyword{repulsione di Pauli}: quando le nuvole elettroniche cominciano a compenetrarsi, gli elettroni di una molecola non possono occupare gli stati già occupati dall'altra, e devono essere promossi a stati di energia superiore.
+Il costo energetico è quindi in larga parte un aumento di energia cinetica dovuto all'ortogonalizzazione delle funzioni d'onda, e non un termine coulombiano fra nuclei.\\
+
+La forma fisicamente corretta del termine repulsivo è $V_{\text{rep}} = Ae^{-Br}$, nota come potenziale di Born-Mayer.\\
+
+\newpage
+
+Nella pratica si usa però quasi sempre il potenziale di Lennard-Jones\mkeyword{potenziale di Lennard-Jones}
+
+\begin{equation}
+    V(r) = 4\varepsilon\left[\left(\frac{\sigma}{r}\right)^{12} - \left(\frac{\sigma}{r}\right)^{6}\right],
+    \label{eq:lennardjones}
+\end{equation}
+
+in cui $\varepsilon$ è la profondità della buca, cioè l'energia di legame della coppia, e $\sigma$ la distanza alla quale il potenziale si annulla.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[x=3cm, y=1.3cm, >={Latex[length=2mm]}]
+        % --- macro locali -------------------------------------------------
+        \def\LJ{4*(pow(1/\x,12)-pow(1/\x,6))}
+        \def\rmin{1.1225}
+        % --- assi ---------------------------------------------------------
+        \draw[->] (0.88,0) -- (3.25,0) node[below right] {$r$};
+        \draw[->] (0.92,-1.45) -- (0.92,2.25) node[above left] {$V(r)$};
+        % --- curva --------------------------------------------------------
+        \draw[domain=0.95:3.15, samples=250, smooth, thick]
+            plot (\x, {\LJ});
+        % --- sigma --------------------------------------------------------
+        \draw[dashed] (1,0) -- (1,-1.15);
+        \draw[<->] (0.92,-1.15) -- (1,-1.15);
+        \node[above] at (0.96,-1.1) {$\sigma$};
+        % --- r_min --------------------------------------------------------
+        \draw[dashed] (\rmin,0) -- (\rmin,-1);
+        \draw[dashed] (0.92,-1) -- (\rmin,-1);
+        \draw[<->] (0.92,-1.35) -- (\rmin,-1.35);
+        \node[below] at (1.02,-1.35) {$r_{\text{min}}$};
+        % --- epsilon ------------------------------------------------------
+        \draw[<->] (1.55,0) -- (1.55,-1);
+        \node[right] at (1.55,-0.5) {$\varepsilon$};
+        \draw[dashed] (\rmin,-1) -- (1.55,-1);
+        % --- etichette dei due regimi -------------------------------------
+        \node[right] at (1.05,1.6) {repulsione di Pauli, $\sim r^{-12}$};
+        \node[right] at (2.05,0.42) {dispersione, $\sim -r^{-6}$};
+        \draw (2.6,0.32) -- (2.6,-0.05);
+    \end{tikzpicture}
+    \caption{Potenziale di Lennard-Jones.}
+    \label{fig:lennardjones}
+\end{figure}
+
+Annullando la derivata della \eqref{eq:lennardjones} si trova immediatamente la posizione del minimo,
+\begin{equation}
+    r_{\text{min}} = 2^{1/6}\sigma \simeq 1{,}12\,\sigma,
+    \qquad V(r_{\text{min}}) = -\varepsilon.
+    \label{eq:rmin}
+\end{equation}
+
+L'esponente $12$ non ha alcun contenuto fisico, ed è importante saperlo.
+La repulsione vera è esponenziale, come si è appena detto; il $12$ fu scelto per una ragione esclusivamente computazionale, cioè che $12 = 2\times 6$ e dunque, calcolato una volta il termine $(\sigma/r)^6$, quello repulsivo si ottiene elevandolo al quadrato, senza valutare né esponenziali né radici.
+In una simulazione di dinamica molecolare il potenziale va calcolato per ogni coppia di particelle a ogni passo temporale, e questo risparmio faceva la differenza fra fattibile e impraticabile sui calcolatori dell'epoca in cui il modello fu introdotto.
+Il $-6$, al contrario, è fisica autentica e discende dalla \eqref{eq:london}: conviene tenere separate le due cose, perché il termine attrattivo è teoria mentre quello repulsivo è convenienza numerica, tanto che i campi di forza moderni più accurati ripristinano la forma esponenziale con il potenziale di Buckingham.
+
+\section{Il legame a idrogeno}
+ 
+Fra tutte le interazioni intermolecolari il legame a idrogeno\mkeyword{legame a idrogeno} è la più complessa.\\
+
+Si presenta di solito come un caso particolare di interazione dipolo-dipolo, e in prima approssimazione la descrizione regge: si stabilisce fra molecole nelle quali un atomo di idrogeno è legato covalentemente a un atomo piccolo e fortemente elettronegativo, in pratica $\mathrm{F}$, $\mathrm{N}$ oppure $\mathrm{O}$, cosicché il legame risulta molto polarizzato e l'idrogeno porta una carica parziale positiva pronunciata.
+Vedremo però che questa lettura, per quanto utile, è insufficiente, e che il legame a idrogeno possiede una componente che nessun modello elettrostatico può riprodurre.
+ 
+Si chiama donatore\mkeyword{donatore} il frammento $\mathrm{X}$--$\mathrm{H}$ che mette a disposizione l'idrogeno, e accettore\mkeyword{accettore} l'atomo $\mathrm{Y}$ che offre un doppietto libero, secondo lo schema
+
+\begin{equation}
+    \mathrm{X}\text{--}\mathrm{H}\cdots\mathrm{Y},
+    \qquad \mathrm{X},\mathrm{Y} \in \{\mathrm{F},\mathrm{N},\mathrm{O}\}.
+    \label{eq:schemaH}
+\end{equation}
+
+Nell'acqua ogni molecola può fungere da donatore due volte, avendo due idrogeni, e da accettore altre due, avendo due doppietti liberi sull'ossigeno, il che le consente di formare fino a quattro legami a idrogeno contemporaneamente.
+Nell'acido fluoridrico, al contrario, il singolo idrogeno limita il numero di legami donati a uno, e nell'ammoniaca è l'unico doppietto libero dell'azoto a limitare a uno il numero di legami accettati.
+
+Questa contabilità è essenziale e spiega un fatto altrimenti paradossale: il singolo legame $\mathrm{F}$--$\mathrm{H}\cdots\mathrm{F}$ è il più forte della famiglia, con circa $29 \ kJ/mol$ contro i $21 \ kJ/mol$ del legame nell'acqua, eppure l'acido fluoridrico bolle a $19,5 \ ^\circ C$ e l'acqua a $100 \ ^\circ C$.
+Il motivo è che $\mathrm{HF}$ può costruire soltanto catene monodimensionali a zig-zag, mentre l'acqua costruisce una rete tridimensionale con il doppio dei legami per molecola.
+ 
+\subsection{Perché il legame a idrogeno è così forte}
+ 
+Le ragioni per cui il legame a idrogeno è così forte sono due.\\
+
+La prima è che il legame $\mathrm{X}$--$\mathrm{H}$ è fortemente polarizzato, con una carica parziale $\delta^+$ concentrata sull'idrogeno e $\delta^-$ sull'atomo elettronegativo.
+
+La seconda è che tanto l'idrogeno quanto $\mathrm{N}$, $\mathrm{O}$ e $\mathrm{F}$ sono atomi piccoli, cosicché i due dipoli possono avvicinarsi molto, e poiché l'energia dipolare cresce rapidamente al diminuire della distanza, l'effetto è amplificato.\\
+
+Va aggiunta poi una peculiarità dell'idrogeno, e che è la vera ragione per cui l'interazione porta il suo nome.
+
+L'idrogeno è l'unico elemento privo di elettroni di core: quando cede densità elettronica al partner più elettronegativo, ciò che resta esposto è il nucleo nudo, cioè un protone.
+In ogni altro atomo la carica positiva del nucleo è schermata dai gusci interni, e soprattutto quei gusci oppongono la repulsione di Pauli discussa in precedenza, che impedisce all'accettore di avvicinarsi.
+Nell'idrogeno questa barriera semplicemente non c'è, e il doppietto dell'accettore può penetrare fino a distanze altrimenti proibite.
+
+\subsection{La componente covalente}
+ 
+La classificazione del legame a idrogeno come caso particolare di interazione dipolo-dipolo va dunque corretta.
+
+Tre osservazioni sperimentali non sono compatibili con un modello puramente elettrostatico.
+ 
+La prima è la direzionalità.
+L'energia di un'interazione fra due dipoli varia dolcemente con l'angolo, mentre il legame a idrogeno richiede un allineamento marcato, con l'angolo $\mathrm{X}$--$\mathrm{H}\cdots\mathrm{Y}$ prossimo a $180^\circ$ e un rapido decadimento dell'energia già per deviazioni di qualche decina di gradi.
+Un allineamento così stringente è la firma della sovrapposizione fra orbitali, che dipende dall'orientazione reciproca in modo assai più critico di quanto non faccia un'interazione fra cariche.
+ 
+La seconda è l'allungamento del legame del donatore.
+Quando si forma il legame a idrogeno, il legame covalente $\mathrm{X}$--$\mathrm{H}$ si allunga e la sua costante di forza diminuisce.
+Nessuna interazione puramente elettrostatica ha motivo di indebolire il legame covalente del partner.
+ 
+La terza prova viene dalla risonanza magnetica nucleare, dove la riga di assorbimento di un nucleo si sdoppia se un nucleo vicino gli è accoppiato.
+L'accoppiamento può avvenire in due modi: direttamente attraverso lo spazio, per interazione fra i momenti magnetici, oppure per il tramite degli elettroni di legame, e in un liquido il primo si annulla mediando sulle orientazioni mentre il secondo, essendo uno scalare, sopravvive.
+Negli acidi nucleici si misura fra i nuclei di azoto di due basi appaiate, separati dal solo legame a idrogeno, un accoppiamento di qualche $Hz$: poiché in soluzione soltanto gli elettroni possono trasmetterlo, ne segue che una densità elettronica condivisa attraversa effettivamente il legame a idrogeno.\\
+
+La descrizione corretta è quella di un legame a tre centri e quattro.
+Combinando gli orbitali dei tre centri allineati $\mathrm{X}$, $\mathrm{H}$ e $\mathrm{Y}$ si ottengono un orbitale legante esteso a tutti e tre, uno all'incirca non legante e uno antilegante; i quattro elettroni disponibili, due del legame $\sigma_{\mathrm{X-H}}$ e due del doppietto di $\mathrm{Y}$, riempiono i primi due e lasciano vuoto il terzo, con un guadagno netto di energia.
+Equivalentemente, il doppietto di $\mathrm{Y}$ si delocalizza in parte nell'orbitale $\sigma^*$ del legame $\mathrm{X}$--$\mathrm{H}$: poiché quell'orbitale ha un lobo sull'idrogeno e un nodo fra $\mathrm{X}$ e $\mathrm{H}$, la sovrapposizione è legante attraverso $\mathrm{H}\cdots\mathrm{Y}$ e antilegante attraverso $\mathrm{X}$--$\mathrm{H}$.
+Una sola delocalizzazione produce dunque due effetti opposti, ed è questa la ragione per cui il legame a idrogeno che si forma e l'allungamento del legame covalente del donatore sono la stessa cosa vista da due lati.
+Ne segue una predizione verificata: al crescere della forza del legame a idrogeno la distanza $\mathrm{H}\cdots\mathrm{Y}$ si accorcia, quella $\mathrm{X}$--$\mathrm{H}$ si allunga.
+Resta inteso che il contributo elettrostatico rimane maggioritario nei legami di forza ordinaria, dove si stima intorno al $60$--$80\%$: la componente covalente è minoritaria, ma è quella che rende conto di tutto ciò che l'elettrostatica non spiega.
+
+\subsection{Il ghiaccio}
+ 
+Di norma un solido è più denso del proprio liquido, perché la perdita di energia cinetica consente un impacchettamento più efficiente.
+L'acqua è la nota eccezione, con $0{,}917 \ g/cm^3$ per il ghiaccio contro $1{,}000$ per il liquido a $0 \ ^\circ C$, ed è il legame a idrogeno a produrre l'inversione.
+ 
+Nel ghiaccio ordinario ogni molecola d'acqua forma esattamente quattro legami a idrogeno, due donati e due accettati, diretti verso i vertici di un tetraedro: ciascun idrogeno punta verso un doppietto libero di una molecola vicina, e ciascun doppietto riceve un idrogeno.
+La struttura che ne risulta è un reticolo di anelli esagonali con un'ampia cavità centrale, tanto ampia che una molecola d'acqua potrebbe esservi inscritta.
+La chiave del fenomeno sta nel fatto che questa disposizione ottimizza il numero e la geometria dei legami a idrogeno ma non l'impacchettamento, e le due cose sono in conflitto: l'angolo tetraedrico di $109{,}5^\circ$ imposto dai doppietti dell'ossigeno obbliga le molecole a tenersi distanti fra loro, e il volume del solido ne risulta penalizzato.
+Fondendo, una frazione di questi legami si rompe, il reticolo collassa parzialmente e le molecole possono avvicinarsi, con un aumento netto di densità.
+Il processo prosegue anche sopra il punto di fusione, ed è per questo che l'acqua liquida raggiunge il massimo di densità a $4 \ ^\circ C$ e non a $0$: fra $0$ e $4$ gradi la progressiva demolizione dei residui di struttura tetraedrica prevale sulla dilatazione termica ordinaria, che sopra i $4$ gradi torna a dominare.
+
+\section{Quadro riassuntivo}
+
+La Tabella~\ref{tab:riepilogo} raccoglie gli ordini di grandezza tipici, che vanno però letti con la cautela discussa: gli intervalli si sovrappongono ampiamente, e l'importanza relativa di ciascun contributo in un sistema concreto dipende dalle dimensioni delle molecole coinvolte assai più che dalla classificazione formale.
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{llcl}
+        \toprule
+        Interazione & Grandezze coinvolte & $E \ [kJ/mol]$ & Dipendenza \\
+        \midrule
+        Ione-dipolo          & carica e dipolo permanente     & $40$--$600$   & $r^{-2}$ \\
+        Legame a idrogeno    & $\mathrm{X}$--$\mathrm{H}$ e doppietto & $10$--$40$ & direzionale \\
+        Dipolo-dipolo        & due dipoli permanenti          & $5$--$25$     & $r^{-6}$, $\propto T^{-1}$ \\
+        Ione-dipolo indotto  & carica e polarizzabilità       & $3$--$15$     & $r^{-4}$ \\
+        Dipolo-dipolo indotto& dipolo e polarizzabilità       & $2$--$10$     & $r^{-6}$ \\
+        Dispersione          & due polarizzabilità            & $0{,}05$--$40$& $r^{-6}$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{Ordini di grandezza delle interazioni intermolecolari.
+    L'intervallo estremamente ampio della dispersione riflette il fatto che essa cresce senza limite con le dimensioni molecolari.}
+    \label{tab:riepilogo}
+\end{table}

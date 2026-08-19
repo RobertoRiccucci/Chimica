@@ -374,6 +374,9 @@ INPUT %OUTDIR%/chapters/capitolo_3.aux
 INPUT %OUTDIR%/chapters/capitolo_4.aux
 INPUT %OUTDIR%/chapters/capitolo_4.aux
 INPUT %OUTDIR%/chapters/capitolo_4.aux
+INPUT %OUTDIR%/chapters/capitolo_5.aux
+INPUT %OUTDIR%/chapters/capitolo_5.aux
+INPUT %OUTDIR%/chapters/capitolo_5.aux
 OUTPUT %OUTDIR%/Chimica.aux
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-cmr.cfg
@@ -560,6 +563,12 @@ INPUT ./foto/VSEPR.png
 INPUT ./foto/VSEPR.png
 INPUT ./foto/VSEPR.png
 INPUT ./foto/VSEPR.png
+INPUT ./chapters/capitolo_5.tex
+INPUT ./chapters/capitolo_5.tex
+OUTPUT %OUTDIR%/chapters/capitolo_5.aux
+INPUT ./chapters/capitolo_5.tex
+INPUT ./chapters/capitolo_5.tex
+INPUT chapters/capitolo_5.tex
 INPUT %OUTDIR%/Chimica.aux
 INPUT %OUTDIR%/chapters/preface.aux
 INPUT %OUTDIR%/chapters/preface.aux
@@ -576,6 +585,9 @@ INPUT %OUTDIR%/chapters/capitolo_3.aux
 INPUT %OUTDIR%/chapters/capitolo_4.aux
 INPUT %OUTDIR%/chapters/capitolo_4.aux
 INPUT %OUTDIR%/chapters/capitolo_4.aux
+INPUT %OUTDIR%/chapters/capitolo_5.aux
+INPUT %OUTDIR%/chapters/capitolo_5.aux
+INPUT %OUTDIR%/chapters/capitolo_5.aux
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx8.pfb
@@ -585,6 +597,7 @@ INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi12.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi6.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi9.pfb
+INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmib10.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr6.pfb
