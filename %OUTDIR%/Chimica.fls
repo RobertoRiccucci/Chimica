@@ -377,6 +377,9 @@ INPUT %OUTDIR%/chapters/capitolo_4.aux
 INPUT %OUTDIR%/chapters/capitolo_5.aux
 INPUT %OUTDIR%/chapters/capitolo_5.aux
 INPUT %OUTDIR%/chapters/capitolo_5.aux
+INPUT %OUTDIR%/chapters/capitolo_6.aux
+INPUT %OUTDIR%/chapters/capitolo_6.aux
+INPUT %OUTDIR%/chapters/capitolo_6.aux
 OUTPUT %OUTDIR%/Chimica.aux
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-cmr.cfg
@@ -569,6 +572,12 @@ OUTPUT %OUTDIR%/chapters/capitolo_5.aux
 INPUT ./chapters/capitolo_5.tex
 INPUT ./chapters/capitolo_5.tex
 INPUT chapters/capitolo_5.tex
+INPUT ./chapters/capitolo_6.tex
+INPUT ./chapters/capitolo_6.tex
+OUTPUT %OUTDIR%/chapters/capitolo_6.aux
+INPUT ./chapters/capitolo_6.tex
+INPUT ./chapters/capitolo_6.tex
+INPUT chapters/capitolo_6.tex
 INPUT %OUTDIR%/Chimica.aux
 INPUT %OUTDIR%/chapters/preface.aux
 INPUT %OUTDIR%/chapters/preface.aux
@@ -588,6 +597,9 @@ INPUT %OUTDIR%/chapters/capitolo_4.aux
 INPUT %OUTDIR%/chapters/capitolo_5.aux
 INPUT %OUTDIR%/chapters/capitolo_5.aux
 INPUT %OUTDIR%/chapters/capitolo_5.aux
+INPUT %OUTDIR%/chapters/capitolo_6.aux
+INPUT %OUTDIR%/chapters/capitolo_6.aux
+INPUT %OUTDIR%/chapters/capitolo_6.aux
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx8.pfb

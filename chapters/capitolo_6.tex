@@ -1,0 +1,265 @@
+\chapter{Teoria cinetica dei gas}
+
+L'equazione di stato dei gas perfetti $PV = nRT$ descrive il gas dal punto di vista macroscopico, cioè come un oggetto di dimensioni paragonabili alle nostre, fatto di litri e di atmosfere, senza dire nulla su che cosa il gas sia.
+La teoria cinetica\mkeyword{teoria cinetica} colma questa lacuna: assume che il gas sia costituito da molecole in moto e ricava l'equazione di stato dalla meccanica di quelle molecole.
+Il risultato è notevole non tanto perché riproduce una legge già nota, quanto perché nel farlo attribuisce un significato meccanico a due grandezze, la pressione e la temperatura, che nella termodinamica macroscopica sono primitive.
+
+\section{Il gas dal punto di vista microscopico}
+
+Una mole contiene $N_A = 6,022\cdot 10^{23}$ molecole, e la prima osservazione da fare è che in un gas queste molecole occupano una frazione trascurabile dello spazio disponibile.
+Una mole di acqua gassosa a $1 \ atm$ e $300 \ K$ occupa
+\begin{equation}
+    V_m = \frac{RT}{P} = \frac{0,0821 \cdot 300}{1} \simeq 24,6 \ L,
+    \label{eq:volumemolare}
+\end{equation}
+mentre la stessa mole allo stato liquido pesa $18 \ g$ e, avendo l'acqua densità unitaria, occupa $18 \ mL$.
+Il rapporto fra i due volumi vale
+\begin{equation}
+    \frac{18 \ mL}{24,6 \ L} = 7,3\cdot 10^{-4},
+    \label{eq:rapportovolumi}
+\end{equation}
+e poiché nel liquido le molecole sono già a contatto, la \eqref{eq:rapportovolumi} è una sovrastima del volume proprio delle molecole: almeno il $99{,}93\%$ del volume di un gas è spazio vuoto.
+Se le molecole occupano così poco spazio e il gas riempie ugualmente tutto il recipiente, l'unica spiegazione possibile è che esse si muovano.
+
+\section{Interpretazione microscopica della pressione}
+
+La pressione è la conseguenza degli urti delle molecole contro le pareti del recipiente.
+Consideriamo una molecola di massa $m$ che urta elasticamente una parete perpendicolare all'asse $x$: prima dell'urto la sua velocità è $\mathbf{v} = (v_x, v_y, v_z)$, dopo l'urto è $(-v_x, v_y, v_z)$, e la quantità di moto trasferita alla parete vale
+
+\begin{equation}
+    \Delta p = 2mv_x .
+    \label{eq:qdmurto}
+\end{equation}
+
+Se il recipiente è un cubo di lato $L$, fra due urti successivi sulla stessa parete la molecola percorre un tratto $2L$ lungo $x$, cosicché l'intervallo fra due urti è $\Delta t = 2L/v_x$.
+La forza media esercitata da quella singola molecola su quella singola parete è dunque
+
+\begin{equation}
+    F = \frac{\Delta p}{\Delta t} = \frac{2mv_x}{2L/v_x} = \frac{mv_x^2}{L}.
+    \label{eq:forzasingola}
+\end{equation}
+Sommando su tutte le $N$ molecole e introducendo la media $\langle v_x^2\rangle$, poiché le tre direzioni dello spazio sono equivalenti e vale quindi $\langle v_x^2\rangle = \langle v^2\rangle/3$, si ottiene per la forza totale $Nm\langle v^2\rangle/(3L)$.
+Dividendo per la superficie $L^2$ della parete e riconoscendo $V = L^3$ si arriva al risultato centrale della teoria cinetica,
+
+\begin{equation}
+    PV = \frac{1}{3}Nm\langle v^2\rangle .
+    \label{eq:cineticabase}
+\end{equation}
+
+\subsection{La distribuzione di Maxwell-Boltzmann}
+
+Non tutte le molecole si muovono alla stessa velocità, e la distribuzione dei moduli è quella di Maxwell-Boltzmann\mkeyword{distribuzione di Maxwell-Boltzmann}
+
+\begin{equation}
+    f(v) = 4\pi\left(\frac{m}{2\pi k_BT}\right)^{3/2} v^2 \, e^{-mv^2/2k_BT},
+    \label{eq:maxwell}
+\end{equation}
+
+dove $f(v)\,dv$ è la frazione di molecole con modulo della velocità compreso fra $v$ e $v + dv$.
+La struttura della \eqref{eq:maxwell} spiega da sola la forma del grafico: il fattore gaussiano $e^{-mv^2/2k_BT}$ penalizza le velocità alte, mentre il fattore $v^2$, che proviene dall'elemento di volume in coordinate sferiche nello spazio delle velocità, penalizza quelle basse.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[x=3.6cm, y=2.9cm, >={Latex[length=2mm]}]
+        % --- macro riutilizzabili -----------------------------------------
+        \def\mb{2.71828*pow(\x,2)*exp(-pow(\x,2))}
+        \def\vp{1}
+        \def\vmed{1.1284}
+        \def\vrms{1.2247}
+        \def\marca#1#2#3{\draw[dashed] (#1,#3) -- (#1,#2);}
+        % --- assi ---------------------------------------------------------
+        \draw[->] (-0.05,0) -- (2.55,0) node[below left] {velocità $v$};
+        \draw[->] (0,-0.05) -- (0,1.20) node[right] {$f(v)$};
+        % --- curva --------------------------------------------------------
+        \draw[domain=0:2.5, samples=200, smooth, thick] plot (\x, {\mb});
+        % --- velocita' caratteristiche ------------------------------------
+        \marca{\vp}{1.000}{-0.06}
+        \marca{\vmed}{0.969}{-0.20}
+        \marca{\vrms}{0.910}{-0.34}
+        \node[font=\footnotesize, anchor=north] at (\vp,-0.06) {$v_p$};
+        \node[font=\footnotesize, anchor=north] at (\vmed,-0.20) {$\langle v\rangle$};
+        \node[font=\footnotesize, anchor=north] at (\vrms,-0.34) {$v_{rms}$};
+    \end{tikzpicture}
+    \caption{Distribuzione di Maxwell-Boltzmann dei moduli della velocità.}
+    \label{fig:maxwell}
+\end{figure}
+
+Il prodotto di un fattore crescente e di uno decrescente produce una curva asimmetrica, ripida a sinistra e con una coda lunga a destra, la cui area resta unitaria a ogni temperatura.
+Al crescere di $T$, o al diminuire della massa, la curva si abbassa e si allarga verso destra, ma il suo integrale non cambia.
+
+L'asimmetria ha una conseguenza che conviene rendere quantitativa.
+Dalla \eqref{eq:maxwell} si ricavano tre velocità caratteristiche distinte,
+
+\begin{equation}
+    v_p = \sqrt{\frac{2k_BT}{m}},
+    \qquad
+    \langle v\rangle = \sqrt{\frac{8k_BT}{\pi m}},
+    \qquad
+    v_{rms} = \sqrt{\langle v^2\rangle} = \sqrt{\frac{3k_BT}{m}},
+    \label{eq:velocitacaratteristiche}
+\end{equation}
+
+cioè la velocità più probabile, che corrisponde al massimo della curva, la velocità media e la velocità quadratica media.
+
+\section{Temperatura ed energia cinetica}
+
+Riscrivendo la \eqref{eq:cineticabase} in termini dell'energia cinetica media di traslazione $\varepsilon_{tr} = \tfrac{1}{2}m\langle v^2\rangle$ si ottiene
+
+\begin{equation}
+    PV = \frac{2}{3}N\varepsilon_{tr},
+    \label{eq:pvenergia}
+\end{equation}
+
+e il confronto con l'equazione di stato scritta nella forma $PV = Nk_BT$ fornisce immediatamente
+
+\begin{equation}
+    \varepsilon_{tr} = \frac{3}{2}k_BT,
+    \qquad
+    E_{tr,m} = \frac{3}{2}RT .
+    \label{eq:equipartizione}
+\end{equation}
+
+La temperatura assoluta è dunque, a meno di un fattore, l'energia cinetica media di traslazione di una molecola, e questo è il contenuto fisico del principio di equipartizione\mkeyword{equipartizione}: ciascuno dei tre gradi di libertà traslazionali contribuisce $\tfrac{1}{2}k_BT$.\\
+
+Va aggiunto che la \eqref{eq:equipartizione} riguarda la sola energia di traslazione.
+Per un gas monoatomico come l'elio essa esaurisce l'energia interna, e da qui segue il calore specifico $C_V = \tfrac{3}{2}R$; per una molecola biatomica si aggiungono due gradi di libertà rotazionali, e per una poliatomica non lineare tre, con i corrispondenti contributi al calore specifico.
+L'equazione di stato non ne risente, perché la pressione dipende solo dal moto del centro di massa, ed è questa la ragione per cui $PV = nRT$ vale identica per gas mono e poliatomici mentre i loro calori specifici differiscono.
+
+\subsection{Effusione e legge di Graham}
+
+Poiché a parità di temperatura l'energia cinetica media è la stessa per tutti i gas, dalla condizione
+\begin{equation}
+    \frac{1}{2}m_1\langle v_1^2\rangle = \frac{1}{2}m_2\langle v_2^2\rangle
+    \qquad\Longrightarrow\qquad
+    \frac{\langle v_1^2\rangle}{\langle v_2^2\rangle} = \frac{m_2}{m_1}
+    \label{eq:graham}
+\end{equation}
+segue che le velocità stanno fra loro come l'inverso della radice delle masse.
+Il flusso di molecole che attraversa un piccolo foro è proporzionale a $\langle v\rangle$, e dunque la velocità con cui due gas fuoriescono da uno stesso foro sta nel rapporto $\sqrt{M_2/M_1}$: è la legge di Graham, che consente di separare gas diversi in base alla massa molecolare e che ha trovato la sua applicazione storicamente più rilevante nell'arricchimento isotopico dell'uranio, dove la separazione fra $^{235}\mathrm{UF_6}$ e $^{238}\mathrm{UF_6}$ sfrutta un rapporto di masse di appena $1,0043$, con un fattore di separazione per stadio di $1,0043^{1/2} \simeq 1,0021$ che rende necessarie migliaia di stadi in cascata.
+
+\newpage
+
+\section{Equazione di Van der Waals}
+
+Il modello di gas perfetto poggia su due ipotesi: che il volume proprio delle molecole sia trascurabile rispetto a quello del recipiente, cioè che le molecole siano puntiformi, e che fra di esse non agiscano forze a distanza.
+Entrambe valgono rigorosamente solo nel limite di basse pressioni e grandi volumi molari, dove le molecole sono in media lontane fra loro.
+
+Il fallimento più vistoso è però qualitativo prima ancora che quantitativo: l'equazione $PV = nRT$ non ammette alcuna transizione di fase, e prevede che un gas resti gas a qualunque pressione.
+Occorre dunque un'equazione di stato che contenga, sia pure in forma rudimentale, le due proprietà che il gas perfetto ignora, cioè il volume delle molecole e le forze intermolecolari studiate nel capitolo precedente.
+
+Conviene passare a grandezze intensive, introducendo il volume molare $V_m = V/n$ e la densità numerale $\rho_n = n/V = 1/V_m$, e scrivere l'equazione di stato nella forma $PV_m = RT$.
+
+\subsection{Il covolume}
+
+La prima correzione riguarda il volume.
+Le molecole hanno dimensioni finite, quindi il volume effettivamente disponibile per il loro moto non è il volume del recipiente ma quello diminuito di un termine $b$, detto covolume\mkeyword{covolume}, con le stesse dimensioni di un volume molare:
+
+\begin{equation}
+    V_m^{gp} = V_m - b .
+    \label{eq:covolume}
+\end{equation}
+
+A differenza di $R$, il covolume non è una costante universale, ma dipende dal gas, il che è del resto ovvio se ha il significato che gli si attribuisce.
+
+\subsection{Il termine attrattivo}
+
+La seconda correzione riguarda la pressione.
+Una molecola nel corpo del gas è circondata da vicini in tutte le direzioni e la risultante delle forze attrattive che subisce è nulla in media; una molecola che sta per urtare la parete, invece, ha vicini soltanto dalla parte del gas, e viene quindi frenata verso l'interno.
+Arriva alla parete con quantità di moto minore e la pressione effettivamente misurata è minore di quella che si osserverebbe in assenza di interazioni:
+
+\begin{equation}
+    P^{gp} = P + \frac{a}{V_m^2}.
+    \label{eq:correzionepressione}
+\end{equation}
+
+La dipendenza da $V_m^{-2}$ segue da un argomento di densità di coppie.
+L'entità della frenata è proporzionale al numero di molecole che tirano indietro quella incidente, cioè a $\rho_n = 1/V_m$, e il numero di molecole che arrivano alla parete nell'unità di tempo è a sua volta proporzionale a $\rho_n$: il prodotto delle due densità dà $\rho_n^2 = 1/V_m^2$, e $a$ è la costante di proporzionalità.\\
+
+Mettendo insieme le due correzioni si ottiene l'equazione di van der Waals\mkeyword{equazione di van der Waals}
+
+\begin{equation}
+    \left(P + \frac{a}{V_m^2}\right)(V_m - b) = RT .
+    \label{eq:vanderwaals}
+\end{equation}
+
+\section{Isoterme e punto critico}
+
+Esplicitando la \eqref{eq:vanderwaals} rispetto alla pressione si ottiene
+
+\begin{equation}
+    P = \frac{RT}{V_m - b} - \frac{a}{V_m^2},
+    \label{eq:vdwesplicita}
+\end{equation}
+
+espressione nella quale il primo termine, repulsivo, domina a grandi volumi molari, cioè a basse pressioni e alte temperature, mentre il secondo, attrattivo, prende il sopravvento a volumi molari piccoli.\\
+
+Studiando la \eqref{eq:vdwesplicita} a $T$ fissata si trovano tre famiglie di isoterme.
+
+Al di sopra di una temperatura caratteristica $T_c$ le isoterme sono monotone decrescenti e il gas si comporta qualitativamente come un gas perfetto, tanto più fedelmente quanto più ci si allontana da $T_c$. L'isoterma prende il nome di isoterma supercritica\mkeyword{isoterma supercritica}.
+
+Al di sotto di $T_c$ le isoterme presentano un massimo e un minimo relativi. L'isoterma prende il nome di isoterma subcritica\mkeyword{isoterma subcritica}.
+
+Esattamente a $T = T_c$ massimo e minimo si fondono in un flesso a tangente orizzontale, che definisce il punto critico\mkeyword{punto critico}. L'isoterma prende il nome di isoterma critica\mkeyword{isoterma critica}.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[x=1.6cm, y=3.0cm, >={Latex[length=2mm]}]
+        % --- macro riutilizzabili -----------------------------------------
+        \def\iso#1{8*#1/(3*\x-1)-3/(\x*\x)}
+        \def\isoterma#1#2{\draw[domain=#2:3.60, samples=220, smooth, thick] plot (\x, {\iso{#1}});}
+        % --- assi ---------------------------------------------------------
+        \draw[->] (0,0) -- (4.35,0) node[below left] {$V_m$};
+        \draw[->] (0,0) -- (0,2.15) node[below right] {$P$};
+        % --- isoterme -----------------------------------------------------
+        \isoterma{1.15}{0.700}
+        \isoterma{1.00}{0.573}
+        \isoterma{0.85}{0.500}
+        % --- etichette delle isoterme -------------------------------------
+        \node[font=\scriptsize, anchor=west] at (3.66,0.746) {$T > T_c$};
+        \node[font=\scriptsize, anchor=west] at (3.66,0.624) {$T = T_c$};
+        \node[font=\scriptsize, anchor=west] at (3.66,0.502) {$T < T_c$};
+        % --- punto critico ------------------------------------------------
+        \fill (1,1) circle (1.6pt);
+        \node[font=\scriptsize, anchor=south east] at (1.90,1.00) {$(V_{mc},P_c)$};
+        % --- segmento di Maxwell ------------------------------------------
+        %\draw[dashed] (0.553,0.5045) -- (3.128,0.5045);
+    \end{tikzpicture}
+    \caption{Isoterme di van der Waals.}
+    \label{fig:isotermevdw}
+\end{figure}
+
+L'isoterma critica separa due regioni del piano $P$--$V_m$ con comportamenti qualitativamente diversi.
+Al di sopra di $T_c$ il gas non può essere liquefatto per sola compressione, per quanto grande sia la pressione applicata; al di sotto la compressione produce liquefazione, e in questo regime è appropriato chiamare la sostanza vapore anziché gas.
+
+\subsection{Isoterma supercritica}
+
+Per $T > T_c$ la pressione decresce monotonamente al crescere del volume molare e l'isoterma non presenta punti stazionari.
+Comprimendo il fluido lungo una di queste curve la pressione sale indefinitamente senza che compaia alcuna discontinuità, e la sostanza non può essere liquefatta per sola compressione, per quanto grande sia la pressione applicata.
+Quanto più ci si allontana da $T_c$ tanto più il termine attrattivo diventa irrilevante rispetto a $RT/(V_m-b)$, e la curva tende all'iperbole del gas perfetto.
+
+\subsection{Isoterma critica}
+
+A $T = T_c$ il massimo e il minimo relativi si fondono in un unico punto di flesso a tangente orizzontale, definito dall'annullamento simultaneo delle prime due derivate,
+\begin{equation}
+    \left(\frac{\partial P}{\partial V_m}\right)_{T_c} = 0,
+    \qquad
+    \left(\frac{\partial^2 P}{\partial V_m^2}\right)_{T_c} = 0 .
+    \label{eq:flesso}
+\end{equation}
+Imponendo le \eqref{eq:flesso} alla \eqref{eq:vdwesplicita} ed eliminando la temperatura fra le due condizioni si ricava $V_m - b = \tfrac{2}{3}V_m$, da cui seguono le coordinate del punto critico in funzione delle sole costanti del gas:
+\begin{equation}
+    V_{mc} = 3b,
+    \qquad
+    T_c = \frac{8a}{27Rb},
+    \qquad
+    P_c = \frac{a}{27b^2}.
+    \label{eq:costanticritiche}
+\end{equation}
+Le \eqref{eq:costanticritiche} rendono conto di due fatti familiari: l'elio, con $T_c = 5{,}2 \ K$, va raffreddato a temperature estreme prima di poter essere liquefatto, mentre l'anidride carbonica, con $T_c = 304 \ K$, liquefa già a temperatura ambiente sotto circa $70 \ atm$, ed è per questo che le bombole di $\mathrm{CO_2}$ contengono liquido e quelle di azoto gas compresso.
+
+\subsection{Isoterma subcritica}
+
+Per $T < T_c$ l'isoterma presenta un minimo e un massimo relativi, e nel tratto che li congiunge si avrebbe $(\partial P/\partial V_m)_T > 0$, cioè una pressione che cresce all'aumentare del volume.
+Uno stato simile è meccanicamente instabile e non è osservabile: una fluttuazione che comprimesse localmente il fluido ne abbasserebbe la pressione, favorendo un'ulteriore compressione in un processo che si autoamplifica.
+L'ansa va quindi sostituita con un segmento orizzontale, posto in modo che le due aree che esso racchiude con la curva siano uguali, condizione nota come costruzione di Maxwell\mkeyword{costruzione di Maxwell} ed equivalente all'uguaglianza dei potenziali chimici delle due fasi agli estremi del segmento.
+Percorrendo l'isoterma in compressione si distinguono allora tre tratti: a destra del segmento si comprime il vapore, con andamento simile a quello supercritico; lungo il segmento il vapore liquefa progressivamente a pressione costante e le due fasi coesistono; a sinistra la curva diventa ripidissima, il che è la traduzione grafica del fatto che un liquido è quasi incomprimibile.
