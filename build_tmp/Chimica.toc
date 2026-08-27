@@ -120,48 +120,11 @@
 \contentsline {subsection}{\numberline {8.2.3}Effetto della temperatura}{66}{subsection.8.2.3}%
 \contentsline {section}{\numberline {8.3}Giustificazione formale dell'effetto della temperatura}{66}{section.8.3}%
 \contentsline {subsection}{\numberline {8.3.1}Equazione di van't Hoff}{66}{subsection.8.3.1}%
-\contentsline {chapter}{\numberline {9}Termodinamica delle transizioni di fase}{68}{chapter.9}%
-\contentsline {section}{\numberline {9.1}L'equazione di Clausius-Clapeyron}{68}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}Integrazione per le transizioni solido-liquido}{69}{subsection.9.1.1}%
-\contentsline {subsection}{\numberline {9.1.2}Integrazione per le transizioni con un vapore}{69}{subsection.9.1.2}%
-\contentsline {section}{\numberline {9.2}Fasi e regola delle fasi}{70}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Il punto triplo}{70}{subsection.9.2.1}%
-\contentsline {section}{\numberline {9.3}Diagrammi di stato}{71}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.1}Acqua}{71}{subsection.9.3.1}%
-\contentsline {subsection}{\numberline {9.3.2}Anidride carbonica}{71}{subsection.9.3.2}%
-\contentsline {subsection}{\numberline {9.3.3}Elio e ferro}{71}{subsection.9.3.3}%
-\contentsline {subsection}{\numberline {9.3.4}Carbonio e metastabilità}{72}{subsection.9.3.4}%
-\contentsline {chapter}{\numberline {10}Cinetica chimica}{73}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Ordine zero}{73}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Ordine uno}{74}{section.10.2}%
-\contentsline {subsection}{\numberline {10.2.1}Irreversibile}{74}{subsection.10.2.1}%
-\contentsline {subsection}{\numberline {10.2.2}Reversibile}{74}{subsection.10.2.2}%
-\contentsline {section}{\numberline {10.3}Ordine due}{74}{section.10.3}%
-\contentsline {section}{\numberline {10.4}Profilo di reazione}{75}{section.10.4}%
-\contentsline {subsection}{\numberline {10.4.1}Equazione di Arrhenius}{75}{subsection.10.4.1}%
-\contentsline {subsection}{\numberline {10.4.2}Catalisi}{76}{subsection.10.4.2}%
-\contentsline {chapter}{\numberline {11}Le soluzioni}{77}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Il ciclo di solvatazione}{78}{section.11.1}%
-\contentsline {subsection}{\numberline {11.1.1}Le interazioni all'interno del soluto}{78}{subsection.11.1.1}%
-\contentsline {subsection}{\numberline {11.1.2}Le interazioni fra soluto e solvente}{78}{subsection.11.1.2}%
-\contentsline {subsection}{\numberline {11.1.3}Il bilancio complessivo}{79}{subsection.11.1.3}%
-\contentsline {section}{\numberline {11.2}Solubilità e prodotto di solubilità}{80}{section.11.2}%
-\contentsline {chapter}{\numberline {12}Acidi e basi}{81}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Acidi e basi forti}{81}{section.12.1}%
-\contentsline {section}{\numberline {12.2}Acidi e basi deboli}{82}{section.12.2}%
-\contentsline {section}{\numberline {12.3}Fattori che determinano la forza acida}{82}{section.12.3}%
-\contentsline {section}{\numberline {12.4}Equilibri acido-base in acqua}{83}{section.12.4}%
-\contentsline {section}{\numberline {12.5}La scala del pH}{84}{section.12.5}%
-\contentsline {section}{\numberline {12.6}Le soluzioni tampone}{84}{section.12.6}%
-\contentsline {chapter}{\numberline {13}Elettrochimica}{85}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Reazioni di ossidoriduzione}{85}{section.13.1}%
-\contentsline {section}{\numberline {13.2}La pila}{85}{section.13.2}%
-\contentsline {section}{\numberline {13.3}Potenziali di elettrodo}{87}{section.13.3}%
-\contentsline {section}{\numberline {13.4}Il legame con la termodinamica}{87}{section.13.4}%
-\contentsline {section}{\numberline {13.5}Equazione di Nernst}{88}{section.13.5}%
-\contentsline {section}{\numberline {13.6}Elettrolisi}{89}{section.13.6}%
-\contentsline {chapter}{\numberline {14}Colore dei sali}{90}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Ioni complessi e campo cristallino}{90}{section.14.1}%
-\contentsline {section}{\numberline {14.2}Configurazioni elettroniche e regola dei sali incolori}{91}{section.14.2}%
-\contentsline {section}{\numberline {14.3}Alto spin, basso spin e serie spettrochimica}{91}{section.14.3}%
+\contentsline {section}{\numberline {8.4}Equilibri fra fasi}{67}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}L'equazione di Clausius-Clapeyron}{67}{subsection.8.4.1}%
+\contentsline {chapter}{\numberline {9}Cinetica chimica}{68}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Ordine zero}{68}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Ordine uno}{69}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Irreversibili}{69}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Reversibile}{69}{subsection.9.2.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

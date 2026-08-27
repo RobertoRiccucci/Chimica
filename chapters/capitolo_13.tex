@@ -1,0 +1,229 @@
+\chapter{Elettrochimica}
+ 
+L'elettrochimica studia le reazioni nelle quali avviene un trasferimento di elettroni fra le specie coinvolte, e il modo in cui tale trasferimento può essere sfruttato per produrre lavoro elettrico oppure, all'inverso, forzato dall'esterno per far avvenire trasformazioni che spontaneamente non avverrebbero.
+Il filo conduttore dell'intero capitolo è che una reazione redox non è altro che una reazione con $\Delta G$ come tutte le altre, e che la novità sta soltanto nel fatto che il cammino degli elettroni può essere separato spazialmente dai reagenti.
+ 
+\section{Reazioni di ossidoriduzione}
+ 
+Si dice ossidazione\mkeyword{ossidazione} la perdita di elettroni da parte di una specie e riduzione\mkeyword{riduzione} il loro acquisto.
+
+I due processi non possono avvenire separatamente, poiché gli elettroni non esistono liberi in soluzione: la specie che si ossida li cede a quella che si riduce, e il numero complessivo di elettroni ceduti deve eguagliare quello degli elettroni acquistati.
+
+La specie che si riduce, cioè quella che sottrae elettroni all'altra, si chiama ossidante\mkeyword{ossidante}; quella che si ossida, e che quindi li fornisce, si chiama riducente\mkeyword{riducente}.
+ 
+Per tenere il conto degli elettroni si introduce il numero di ossidazione\mkeyword{numero di ossidazione}, cioè la carica che un atomo avrebbe se tutti i legami che lo coinvolgono fossero completamente ionici, attribuendo la coppia di legame all'atomo più elettronegativo.
+Non è una grandezza fisica, dal momento che la densità elettronica reale è distribuita con continuità e non a numeri interi, ma è un artificio contabile perfettamente adeguato allo scopo: una reazione è redox quando almeno un atomo cambia numero di ossidazione, e la variazione misura il numero di elettroni scambiati.
+ 
+\section{La pila}
+ 
+Se si immerge una lamina di zinco in una soluzione di solfato di rame, la reazione
+\begin{equation}
+    \mathrm{Zn}_{(s)} + \mathrm{Cu^{2+}}_{(aq)} \longrightarrow \mathrm{Zn^{2+}}_{(aq)} + \mathrm{Cu}_{(s)}
+    \label{eq:daniell}
+\end{equation}
+avviene spontaneamente per contatto diretto: gli elettroni passano dallo zinco allo ione rame nel punto stesso in cui i due si toccano, e l'energia liberata si degrada integralmente in calore.\\
+
+L'idea della pila\mkeyword{pila} consiste nel separare fisicamente le due semireazioni, costringendo gli elettroni a percorrere un circuito esterno per andare da una parte all'altra: la stessa reazione, con lo stesso $\Delta G$, produce allora lavoro elettrico anziché calore.
+
+\newpage
+
+La cella è costituita da due semielementi\mkeyword{semielemento}, ciascuno formato da un elettrodo metallico immerso nella soluzione di un suo sale.
+Nel caso in esame lo zinco immerso in $\mathrm{Zn(NO_3)_2}$ costituisce l'anodo\mkeyword{anodo}, sede dell'ossidazione
+
+\begin{equation*}
+    \mathrm{Zn}_{(s)} \longrightarrow \mathrm{Zn^{2+}}_{(aq)} + 2e^- ,
+\end{equation*}
+
+mentre il rame immerso in $\mathrm{Cu(NO_3)_2}$ costituisce il catodo\mkeyword{catodo}, sede della riduzione
+
+\begin{equation*}
+    \mathrm{Cu^{2+}}_{(aq)} + 2e^- \longrightarrow \mathrm{Cu}_{(s)} .
+\end{equation*}
+
+I due semielementi sono collegati esternamente da un filo conduttore, nel quale scorrono gli elettroni, e internamente da un ponte salino\mkeyword{ponte salino} contenente un elettrolita indifferente, tipicamente $\mathrm{NaNO_3}$, i cui ioni non partecipano ad alcuna reazione ma migrano in modo da mantenere la neutralità elettrica delle due soluzioni.
+Senza il ponte salino la soluzione anodica accumulerebbe carica positiva e quella catodica carica negativa, e il flusso di elettroni si arresterebbe quasi immediatamente.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[>={Latex[length=2mm]}, font=\small]
+        % --- macro riutilizzabili -----------------------------------------
+        % becher aperto in alto: #1 = ascissa del centro
+        \def\becher#1{%
+            \draw (#1-1.6,0.2) -- (#1-1.6,-2.6) -- (#1+1.6,-2.6) -- (#1+1.6,0.2);
+            \draw (#1-1.6,-0.4) -- (#1+1.6,-0.4);
+        }
+        % elettrodo: #1 = ascissa, #2 = etichetta, #3 = segno, #4 = verso esterno
+        \def\elettrodo#1#2#3#4{%
+            \draw (#1-0.09,-2.0) rectangle (#1+0.09,1.0);
+            \node at (#1+0.42*#4,0.70) {#3};
+            \node at (#1+0.50*#4,-1.40) {#2};
+        }
+        % --- becher ed elettrodi ------------------------------------------
+        \becher{-3.0}
+        \becher{3.0}
+        \elettrodo{-3.0}{$\mathrm{Zn}$}{$-$}{-1}
+        \elettrodo{3.0}{$\mathrm{Cu}$}{$+$}{1}
+        % --- circuito esterno con voltmetro -------------------------------
+        \draw (-3.0,1.0) -- (-3.0,2.4) -- (-0.55,2.4);
+        \draw (0.55,2.4) -- (3.0,2.4) -- (3.0,1.0);
+        \draw (0,2.4) circle (0.55);
+        \node at (0,2.4) {$V$};
+        \draw[->] (-2.2,2.4) -- (-1.7,2.4);
+        \draw[->] (1.7,2.4) -- (2.2,2.4);
+        \node[anchor=south] at (-1.95,2.5) {$e^-$};
+        \node[anchor=south] at (1.95,2.5) {$e^-$};
+        % --- ponte salino --------------------------------------------------
+        \draw[rounded corners=10pt]
+            (-1.9,-1.2) -- (-1.9,0.9) -- (1.9,0.9) -- (1.9,-1.2);
+        \draw[->] (-0.35,0.9) -- (-0.95,0.9);
+        \draw[->] (0.35,0.9) -- (0.95,0.9);
+        \node[anchor=south] at (-0.95,0.98) {$\mathrm{NO_3^-}$};
+        \node[anchor=south] at (0.95,0.98) {$\mathrm{Na^+}$};
+        % --- specie in soluzione -------------------------------------------
+        \node at (-2.15,-2.15) {$\mathrm{Zn^{2+}}$};
+        \node at (2.15,-2.15) {$\mathrm{Cu^{2+}}$};
+        % --- semireazioni ---------------------------------------------------
+        \node[anchor=north] at (-3.0,-2.8)
+            {$\mathrm{Zn}_{(s)} \rightarrow \mathrm{Zn^{2+}}_{(aq)} + 2e^-$};
+        \node[anchor=north] at (3.0,-2.8)
+            {$\mathrm{Cu^{2+}}_{(aq)} + 2e^- \rightarrow \mathrm{Cu}_{(s)}$};
+    \end{tikzpicture}
+    \caption{Schema della pila Daniell}
+    \label{fig:pila_daniell}
+\end{figure}
+
+Conviene fissare alcuni punti che sono fonte costante di confusione.
+L'anodo produce elettroni e il catodo li consuma; gli elettroni non attraversano mai la soluzione, ma soltanto il circuito esterno, e vanno sempre dall'anodo al catodo; nella soluzione la corrente è trasportata dagli ioni, non dagli elettroni.
+Ne segue che in una pila l'anodo è il polo negativo e il catodo il polo positivo, mentre nell'elettrolisi, come si vedrà, i segni sono invertiti pur restando invariata la definizione di anodo e catodo in termini di ossidazione e riduzione.
+ 
+La cella si rappresenta in forma compatta scrivendo l'anodo a sinistra e il catodo a destra, una barra singola per ogni interfaccia fra fasi diverse e una barra doppia per il ponte salino:
+
+\begin{equation}
+    \mathrm{Zn}_{(s)} \ | \ \mathrm{Zn^{2+}}_{(aq)} \ || \ \mathrm{Cu^{2+}}_{(aq)} \ | \ \mathrm{Cu}_{(s)} .
+    \label{eq:notazione_cella}
+\end{equation}
+ 
+\newpage
+
+\section{Potenziali di elettrodo}
+ 
+La differenza di potenziale che si misura fra i due elettrodi a circuito aperto si chiama forza elettromotrice\mkeyword{forza elettromotrice} della pila e si indica con $E$.
+Quando tutte le specie in soluzione hanno concentrazione $1 \ M$, i gas eventualmente presenti hanno pressione di $1 \ atm$ e la temperatura è di $25 \ ^\circ C$, si parla di potenziale standard\mkeyword{potenziale standard} e si scrive $E^\circ$.
+ 
+Il potenziale di un singolo semielemento non è misurabile in modo assoluto, perché per misurare una differenza di potenziale occorrono sempre due elettrodi.
+Si sceglie allora un riferimento convenzionale, l'elettrodo standard a idrogeno\mkeyword{elettrodo standard a idrogeno}, nel quale la semireazione
+
+\begin{equation*}
+    2\mathrm{H^+}_{(aq)} + 2e^- \longrightarrow \mathrm{H_2}_{(g)}
+\end{equation*}
+
+avviene in condizioni standard su una superficie di platino, e si pone per definizione $E^\circ = 0 \ V$.
+Tutti gli altri potenziali sono misurati accoppiando il semielemento in esame a questo riferimento, e si tabulano per convenzione come potenziali di riduzione\mkeyword{potenziale di riduzione}, cioè scrivendo sempre la semireazione nel verso della riduzione.
+La forza elettromotrice standard della pila è allora
+
+\begin{equation}
+    E^\circ_{cella} = E^\circ_{red}(\text{catodo}) - E^\circ_{red}(\text{anodo}) ,
+    \label{eq:fem_standard}
+\end{equation}
+
+e la pila funziona spontaneamente nel verso scritto quando $E^\circ_{cella} > 0$, cioè quando il potenziale di riduzione del catodo è maggiore di quello dell'anodo.
+
+La scala dei potenziali standard ordina le specie secondo il loro potere ossidante.
+In cima si trova il fluoro, con $E^\circ = +2{,}87 \ V$, l'ossidante più forte fra quelli comuni; in fondo il litio, con $E^\circ = -3{,}04 \ V$, il riducente più forte.
+La posizione dell'idrogeno a $0 \ V$ separa i metalli che riescono a spostarlo dagli acidi, cioè quelli con potenziale negativo come zinco, ferro e magnesio, da quelli che non ci riescono, come rame, argento e oro, i quali hanno potenziale positivo e per essere disciolti richiedono acidi che siano anche ossidanti.
+ 
+\section{Il legame con la termodinamica}
+ 
+Il lavoro elettrico massimo che una pila può compiere è il prodotto della carica trasportata per la differenza di potenziale, e coincide con la variazione di energia libera cambiata di segno, poiché $\Delta G$ misura appunto il lavoro utile massimo a $T$ e $P$ costanti.
+Se $n$ è il numero di moli di elettroni scambiate per mole di reazione e $F = 96\,500 \ C/mol$ è la costante di Faraday\mkeyword{costante di Faraday}, cioè la carica di una mole di elettroni, si ottiene
+\begin{equation}
+    \Delta G = -nFE ,
+    \qquad\qquad
+    \Delta G^\circ = -nFE^\circ .
+    \label{eq:deltag_nfe}
+\end{equation}
+La \eqref{eq:deltag_nfe} traduce immediatamente il criterio di spontaneità: la reazione è spontanea, $\Delta G < 0$, se e solo se $E > 0$.
+Il segno della forza elettromotrice sostituisce dunque il segno dell'energia libera, e la misura di una tensione con un voltmetro è a tutti gli effetti una misura calorimetrica indiretta.
+ 
+Da qui segue anche la regola per combinare semireazioni, che è la fonte di errore più comune.
+Poiché $\Delta G$ è additivo mentre $E$ non lo è, per sommare due semireazioni occorre passare per le energie libere.
+Volendo per esempio ricavare $E^\circ$ della coppia $\mathrm{Fe^{3+}}/\mathrm{Fe}$ a partire da
+\[
+    \mathrm{Fe^{3+}} + e^- \longrightarrow \mathrm{Fe^{2+}} , \quad E^\circ = +0{,}77 \ V ,
+    \qquad
+    \mathrm{Fe^{2+}} + 2e^- \longrightarrow \mathrm{Fe} , \quad E^\circ = -0{,}44 \ V ,
+\]
+si sommano le due energie libere e si divide per i tre elettroni complessivi,
+\begin{equation}
+    E^\circ = \frac{n_1 E^\circ_1 + n_2 E^\circ_2}{n_1 + n_2}
+    = \frac{1 \cdot 0{,}77 + 2 \cdot (-0{,}44)}{3} = -0{,}04 \ V ,
+    \label{eq:combinazione_potenziali}
+\end{equation}
+che è una media pesata sul numero di elettroni, non una somma.
+Sommare direttamente i due potenziali avrebbe dato $+0{,}33 \ V$, un valore privo di senso fisico.
+ 
+Infine, poiché $\Delta G^\circ = -RT \ln K$, confrontando con la \eqref{eq:deltag_nfe} si ottiene il legame fra potenziale standard e costante di equilibrio,
+\begin{equation}
+    \ln K = \frac{nFE^\circ}{RT} ,
+    \qquad\text{ovvero}\qquad
+    \log K = \frac{n E^\circ}{0{,}0592} ,
+    \label{eq:logk}
+\end{equation}
+dove il valore numerico $0{,}0592 \ V$ è $RT\ln 10/F$ calcolato a $298 \ K$.
+Una differenza di potenziale di appena $0{,}0592 \ V$ per elettrone corrisponde quindi a un fattore dieci sulla costante di equilibrio, il che spiega perché potenziali di pochi decimi di volt bastino a rendere una reazione praticamente quantitativa.
+ 
+\section{Equazione di Nernst}
+ 
+Una pila continua a funzionare finché $E > 0$, e si arresta quando $E = 0$: a quel punto, per la \eqref{eq:deltag_nfe}, si ha anche $\Delta G = 0$, cioè la reazione ha raggiunto l'equilibrio e la pila è scarica\mkeyword{pila scarica}.
+
+Conviene sottolineare che una pila esaurita non è una pila «vuota»: i reagenti sono ancora presenti, ma la miscela si trova all'equilibrio e da essa non è più estraibile alcun lavoro utile.
+Il punto in cui questo avviene è determinato dalle concentrazioni delle specie che partecipano alla reazione, poiché la capacità ossidante di una specie $\mathrm{Ox}$ cresce con la sua concentrazione, e con essa cresce $E$.
+ 
+La relazione si ricava direttamente dalla termodinamica.
+Partendo da $\Delta G = \Delta G^\circ + RT \ln Q$ e sostituendo la \eqref{eq:deltag_nfe} in entrambi i membri si ottiene $-nFE = -nFE^\circ + RT \ln Q$, cioè
+\begin{equation}
+    E = E^\circ - \frac{RT}{nF} \ln Q .
+    \label{eq:nernst_cella}
+\end{equation}
+Applicata a una singola semireazione di riduzione $\mathrm{Ox} + ne^- \rightarrow \mathrm{Red}$, per la quale $Q_{sem} = [\mathrm{Red}]/[\mathrm{Ox}]$, la \eqref{eq:nernst_cella} si scrive più comodamente invertendo l'argomento del logaritmo, il che cambia il segno del termine e dà l'equazione di Nernst\mkeyword{equazione di Nernst}
+\begin{equation}
+    E_{red} = E^\circ_{red} + \frac{RT}{nF} \ln \frac{[\mathrm{Ox}]}{[\mathrm{Red}]} .
+    \label{eq:nernst}
+\end{equation}
+Con $[\mathrm{Ox}]$ e $[\mathrm{Red}]$ si intendono i prodotti delle concentrazioni di tutte le specie che compaiono rispettivamente a sinistra e a destra della semireazione, ciascuna elevata al proprio coefficiente stechiometrico; le fasi condensate pure vi compaiono con attività unitaria e i gas con la loro pressione parziale.
+ 
+A $25 \ ^\circ C$, includendo nella costante anche il fattore di conversione al logaritmo decimale, si ha $RT \ln 10 / F = 0{,}0592 \ V$, e la \eqref{eq:nernst} assume la forma d'uso corrente
+\begin{equation}
+    E_{red} = E^\circ_{red} + \frac{0{,}0592}{n} \log \frac{[\mathrm{Ox}]}{[\mathrm{Red}]} .
+    \label{eq:nernst_log}
+\end{equation}
+La lettura qualitativa è immediata: più l'ossidante è concentrato, più il potenziale della coppia è elevato; man mano che la pila lavora l'ossidante si consuma e il riducente si accumula, cosicché $E$ diminuisce fino ad annullarsi.
+ 
+Qualche esempio chiarisce come si costruisce il termine logaritmico.
+Per la coppia $\mathrm{Zn^{2+}}/\mathrm{Zn}$ il metallo è una fase condensata pura e non compare, sicché
+\[
+    E_{red} = -0{,}76 + \frac{0{,}0592}{2} \log [\mathrm{Zn^{2+}}] .
+\]
+Per la coppia $\mathrm{H^+}/\mathrm{H_2}$ compare la pressione parziale dell'idrogeno al denominatore,
+\[
+    E_{red} = 0 + \frac{0{,}0592}{2} \log \frac{[\mathrm{H^+}]^2}{P_{\mathrm{H_2}}} ,
+\]
+che a pressione unitaria si riduce a $E_{red} = -0{,}0592 \ \mathrm{pH}$.
+Per una coppia in cui entrambe le forme sono in soluzione, come $\mathrm{Fe^{3+}}/\mathrm{Fe^{2+}}$, si ha semplicemente $E_{red} = E^\circ_{red} + 0{,}0592 \log([\mathrm{Fe^{3+}}]/[\mathrm{Fe^{2+}}])$.
+Il caso più laborioso è quello del permanganato, dove la semireazione
+\[
+    \mathrm{MnO_4^-} + 5e^- + 8\mathrm{H^+} \longrightarrow \mathrm{Mn^{2+}} + 4\mathrm{H_2O}
+\]
+comporta il passaggio del manganese dal numero di ossidazione $+7$ a $+2$, mentre ossigeno e idrogeno non cambiano il proprio, da cui i cinque elettroni; l'acqua è il solvente e non compare, mentre gli ioni $\mathrm{H^+}$ entrano con l'esponente otto,
+\[
+    E_{red} = E^\circ_{red} + \frac{0{,}0592}{5} \log \frac{[\mathrm{MnO_4^-}][\mathrm{H^+}]^8}{[\mathrm{Mn^{2+}}]} .
+\]
+La dipendenza dall'ottava potenza di $[\mathrm{H^+}]$ spiega perché il permanganato sia un ossidante efficace soltanto in ambiente fortemente acido: ogni unità di $\mathrm{pH}$ in più abbassa il potenziale di quasi un decimo di volt.
+ 
+Nota infine la forza elettromotrice della cella si ottiene, come sempre, dalla differenza fra il potenziale della coppia che si riduce e quello della coppia che si ossida, entrambi scritti come potenziali di riduzione e ciascuno calcolato con la \eqref{eq:nernst_log} alle concentrazioni effettive.
+
+\section{Elettrolisi}
+ 
+L'elettrolisi\mkeyword{elettrolisi} è il processo inverso: applicando dall'esterno una differenza di potenziale maggiore in modulo di quella della pila corrispondente si costringe la reazione ad avvenire nel verso non spontaneo, convertendo lavoro elettrico in energia chimica.
+Le definizioni di anodo e catodo restano quelle di sempre, l'anodo sede dell'ossidazione e il catodo sede della riduzione, ma i segni si invertono: nella cella elettrolitica l'anodo è collegato al polo positivo del generatore e il catodo a quello negativo.
+ 

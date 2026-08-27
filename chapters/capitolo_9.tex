@@ -1,0 +1,172 @@
+\chapter{Termodinamica delle transizioni di fase}
+ 
+Di una sostanza pura possiamo misurare pressione, volume e temperatura, ma le tre grandezze non sono indipendenti perché esiste sempre un'equazione di stato che le lega.
+Il sistema ha quindi due gradi di libertà intensivi: fissati due valori fra $P$, $V$ e $T$, il terzo resta determinato.
+Ne segue che è possibile rappresentare il comportamento della sostanza su un piano $P$--$T$, e che a ogni coppia di valori corrisponde uno stato di aggregazione ben definito, cioè quello termodinamicamente più stabile in quelle condizioni.
+ 
+Il passaggio da uno stato di aggregazione a un altro è una reazione a tutti gli effetti, e si scrive come tale:
+
+\begin{equation}
+    \mathrm{H_2O}_{(l)} \rightleftharpoons \mathrm{H_2O}_{(g)} .
+    \label{eq:transizione}
+\end{equation}
+
+Ciò che distingue i due membri della \eqref{eq:transizione} non è la natura chimica della sostanza, che è la stessa, ma l'organizzazione intermolecolare, cioè il modo in cui le molecole sono disposte e quanto sono libere di muoversi.
+Come per qualunque equilibrio a temperatura e pressione costanti, la condizione perché i due membri coesistano è che nessuno dei due sia favorito, cioè che abbiano la stessa energia libera molare:
+
+\begin{equation}
+    G_a = G_b .
+    \label{eq:uguaglianza_G}
+\end{equation}
+
+Se così non fosse, la sostanza si trasferirebbe interamente nella fase a energia libera minore.
+ 
+\section{L'equazione di Clausius-Clapeyron}
+ 
+La \eqref{eq:uguaglianza_G} vale in ogni punto della curva che separa le due fasi nel piano $P$--$T$.
+Spostandosi lungo tale curva, quindi, non solo le due energie libere restano uguali, ma devono essere uguali anche le loro variazioni:
+\begin{equation}
+    dG_a = dG_b .
+    \label{eq:uguaglianza_dG}
+\end{equation}
+Esplicitando entrambi i membri con il differenziale dell'energia libera di Gibbs per una mole di sostanza, $dG = -S\,dT + V\,dP$, si ottiene
+\begin{equation}
+    -S_a\,dT + V_a\,dP = -S_b\,dT + V_b\,dP ,
+    \label{eq:clapeyron_esplicita}
+\end{equation}
+e raccogliendo i termini omologhi si ricava $(V_a - V_b)\,dP = (S_a - S_b)\,dT$, cioè l'equazione di Clausius-Clapeyron\mkeyword{equazione di Clausius-Clapeyron}
+\begin{equation}
+    \frac{dP}{dT} = \frac{\Delta S}{\Delta V} ,
+    \label{eq:clapeyron}
+\end{equation}
+dove $\Delta S$ e $\Delta V$ sono l'entropia e il volume molari di transizione.
+Si noti che la \eqref{eq:clapeyron} non è una nuova legge fisica ma la semplice conseguenza dell'aver imposto la \eqref{eq:uguaglianza_G} lungo tutta la curva.
+ 
+Il suo significato è che l'equilibrio fra due fasi riduce i gradi di libertà da due a uno.
+Una volta scelta la temperatura, la pressione alla quale le due fasi coesistono non è più libera ma determinata dalla \eqref{eq:clapeyron}, che permette appunto di calcolare $P(T)$ oppure $T(P)$.
+ 
+Poiché la transizione avviene a temperatura costante e in modo reversibile, l'entropia di transizione si esprime tramite il calore latente:
+\begin{equation}
+    \Delta S = \int_a^b \frac{\delta Q_{rev}}{T} = \frac{1}{T}\int_a^b \delta Q_{rev} = \frac{\Delta H}{T} ,
+    \label{eq:entropia_transizione}
+\end{equation}
+dove la temperatura è uscita dall'integrale proprio perché costante durante il passaggio di stato.
+Allo stesso risultato si arriva osservando che all'equilibrio $\Delta G = \Delta H - T\Delta S = 0$, da cui $\Delta H = T\Delta S$.
+Sostituendo la \eqref{eq:entropia_transizione} nella \eqref{eq:clapeyron} si ottiene la forma di uso più comune
+\begin{equation}
+    \frac{dP}{dT} = \frac{\Delta H}{T\,\Delta V} .
+    \label{eq:clapeyron_entalpica}
+\end{equation}
+ 
+\subsection{Integrazione per le transizioni solido-liquido}
+ 
+La \eqref{eq:clapeyron_entalpica} è un'equazione differenziale, e per integrarla occorre sapere come $\Delta H$ e $\Delta V$ dipendano da $P$ e $T$.
+Nel caso di un equilibrio fra due fasi condensate, come solido e liquido, entrambe sono poco comprimibili e poco dilatabili, quindi $\Delta V$ e $\Delta H$ si possono ritenere costanti nell'intervallo considerato.
+La \eqref{eq:clapeyron} diventa allora una relazione lineare fra pressione e temperatura,
+\begin{equation}
+    P = aT + b ,
+    \qquad a = \frac{\Delta S}{\Delta V} ,
+    \label{eq:retta_fusione}
+\end{equation}
+il che spiega perché nei diagrammi di stato la curva di fusione appaia praticamente rettilinea e molto ripida.
+ 
+Il segno del coefficiente angolare merita attenzione, perché è il segno di $\Delta V$: la fusione assorbe sempre calore, quindi $\Delta S$ è positivo, e la pendenza è positiva o negativa a seconda che la sostanza si dilati o si contragga fondendo.
+Nella grande maggioranza dei casi il liquido è meno denso del solido, $\Delta V > 0$ e la curva pende in avanti.
+Per l'acqua accade il contrario: il ghiaccio ha una struttura tetraedrica aperta, imposta dai legami a idrogeno, nella quale le molecole sono mediamente più distanti che nel liquido, cosicché il ghiaccio galleggia, $\Delta V < 0$ e si ha $a < 0$.
+Se così non fosse i mari freddi congelerebbero dal fondo e non ci sarebbe vita al loro interno.
+ 
+\subsection{Integrazione per le transizioni con un vapore}
+ 
+Quando una delle due fasi è un vapore la situazione cambia, perché il volume molare del gas è di tre ordini di grandezza maggiore di quello della fase condensata.
+Si può quindi approssimare
+\begin{equation}
+    \Delta V = V_{gas} - V_{cond} \simeq V_{gas} = \frac{RT}{P} ,
+    \label{eq:approx_volume}
+\end{equation}
+dove nel secondo passaggio si è usata l'equazione di stato dei gas ideali.
+Sostituendo la \eqref{eq:approx_volume} nella \eqref{eq:clapeyron_entalpica} si ottiene
+\begin{equation}
+    \frac{dP}{dT} = \frac{\Delta H}{T\,(RT/P)} = \frac{P\,\Delta H}{RT^2} ,
+    \label{eq:cc_vapore}
+\end{equation}
+e separando le variabili
+\begin{equation}
+    \frac{dP}{P} = \frac{\Delta H}{R}\,\frac{dT}{T^2} .
+    \label{eq:separazione}
+\end{equation}
+Integrando la \eqref{eq:separazione} fra due stati si ricava infine
+\begin{equation}
+    \ln\frac{P_1}{P_2} = -\frac{\Delta H}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right) ,
+    \label{eq:cc_integrata}
+\end{equation}
+che permette di calcolare la tensione di vapore a una temperatura qualsiasi noti un punto della curva e il calore latente.
+Si osservi che la \eqref{eq:cc_integrata} ha la stessa struttura dell'equazione di van 't Hoff, il che non deve sorprendere: un passaggio di stato è un equilibrio come un altro, e la tensione di vapore ne è la costante.
+ 
+\section{Fasi e regola delle fasi}
+ 
+Occorre a questo punto distinguere due concetti che vengono spesso confusi.
+Si dice fase\mkeyword{fase} una porzione di sistema che ha composizione e proprietà uniformi e che è separata dalle altre da una superficie di separazione netta, spesso visibile a occhio nudo.
+Il concetto di fase non coincide con quello di stato di aggregazione: quando si parla di fase solida, liquida o gassosa si sta specificando lo stato di aggregazione che caratterizza quella particolare fase, ma all'interno dello stesso sistema possono coesistere più fasi solide o più fasi liquide.
+Un contenitore con ghiaccio e acqua contiene due fasi, una solida e una liquida; un bicchiere con acqua e olio ne contiene due entrambe liquide.
+ 
+Il numero di fasi che possono coesistere non è arbitrario, ed è fissato dalla regola delle fasi di Gibbs\mkeyword{regola delle fasi}
+\begin{equation}
+    v = c + 2 - f ,
+    \label{eq:regola_fasi}
+\end{equation}
+dove $v$ è la varianza del sistema, cioè il numero di variabili intensive che possono essere modificate indipendentemente, $c$ il numero di componenti indipendenti, $f$ il numero di fasi presenti, e il $2$ tiene conto dei due fattori fisici pressione e temperatura.
+ 
+Per una sostanza pura si ha $c = 1$, e la \eqref{eq:regola_fasi} produce tre casi.
+In una regione del diagramma, con una sola fase, si ha $v = 2$ e il sistema è bivariante: si possono variare indipendentemente pressione e temperatura restando nella stessa fase.
+Lungo una curva di coesistenza, con due fasi, si ha $v = 1$ e il sistema è monovariante: scelta la temperatura, la pressione è determinata, come già stabilito dalla \eqref{eq:clapeyron}.
+Nel punto in cui tre curve si incontrano, con tre fasi, si ha $v = 0$ e il sistema è invariante o zerovariante: non si può cambiare alcun parametro senza far scomparire una fase.
+ 
+\subsection{Il punto triplo}
+ 
+Il punto triplo\mkeyword{punto triplo} è dunque il punto di incontro di tre curve di equilibrio, nel quale le energie libere molari delle tre fasi sono uguali fra loro.
+Il fatto che sia un punto isolato, e non una curva, ha una spiegazione algebrica semplice: imporre l'uguaglianza di tre energie libere significa scrivere due equazioni indipendenti nelle due incognite $P$ e $T$, e un sistema di due equazioni in due incognite ha in generale una soluzione unica.
+La posizione del punto triplo è quindi una proprietà della sostanza e non può essere scelta dallo sperimentatore.
+ 
+Con lo stesso argomento si vede perché non esistano punti quadrupli: l'uguaglianza di quattro energie libere richiederebbe tre equazioni nelle stesse due incognite, e un sistema sovradeterminato non ammette in generale soluzione.
+La regola delle fasi lo conferma, poiché $f = 4$ con $c = 1$ darebbe $v = -1$, che è privo di significato.
+Nulla vieta invece che una stessa sostanza abbia più punti tripli distinti, purché ciascuno coinvolga tre fasi soltanto.
+ 
+\section{Diagrammi di stato}
+ 
+\subsection{Acqua}
+ 
+Il diagramma dell'acqua ha punto triplo a $0{,}0060 \ atm$ e $0{,}01 \ ^\circ C$, e punto critico a $217{,}75 \ atm$ e $373{,}99 \ ^\circ C$.
+Poiché il punto triplo si trova a pressione molto minore di quella atmosferica, alla pressione di $1 \ atm$ la retta orizzontale attraversa nell'ordine le tre regioni, incontrando la curva di fusione a $0 \ ^\circ C$ e quella di ebollizione a $100 \ ^\circ C$, che sono per l'appunto i punti normali di fusione ed ebollizione.
+La curva di fusione, come già discusso, pende all'indietro.
+ 
+Ad alte pressioni il diagramma diventa assai più ricco, perché il ghiaccio ordinario, detto $I_h$, non è l'unica fase solida dell'acqua: esistono numerose forme cristalline diverse, indicate con numeri romani, ciascuna stabile in un proprio intervallo di pressione e temperatura.
+Ne segue che il diagramma completo contiene molti punti tripli oltre a quello classico, e in ciascuno di essi si incontrano tre fasi qualsiasi, per esempio due tipi di ghiaccio e l'acqua liquida, mai quattro.
+A pressioni dell'ordine di mille volte quella atmosferica si formano i cosiddetti ghiacci esotici, più densi dell'acqua liquida, che non hanno però alcuna applicazione pratica.
+ 
+\subsection{Anidride carbonica}
+ 
+Il diagramma dell'anidride carbonica ha la stessa struttura ma il punto triplo si colloca a $5{,}2 \ atm$ e $-56{,}4 \ ^\circ C$, cioè al di sopra della pressione atmosferica.
+La conseguenza è vistosa: alla pressione di $1 \ atm$ la retta orizzontale passa al di sotto del punto triplo e non incontra mai la regione del liquido, cosicché il solido sublima direttamente in vapore.
+È il comportamento del ghiaccio secco, che a pressione ambiente non fonde ma passa direttamente allo stato gassoso.
+Il punto critico cade a $73{,}7 \ atm$ e $31{,}1 \ ^\circ C$, dunque appena sopra la temperatura ambiente, ed è questa vicinanza a rendere l'anidride carbonica supercritica un solvente di uso industriale corrente, per esempio nella decaffeinizzazione.
+ 
+\subsection{Elio e ferro}
+ 
+L'elio è l'unica sostanza a possedere due fasi liquide distinte, entrambe superfluide e stabili in intervalli molto ristretti di pressione e temperatura, indicate come fase A e fase B.
+Ha inoltre la particolarità di non solidificare a nessuna temperatura sotto la sola pressione atmosferica: per ottenerne la fase solida occorrono alcune decine di atmosfere.
+ 
+Il ferro fornisce invece l'esempio di una sostanza con più fasi solide e ben tre punti tripli, e il suo diagramma è di norma disegnato con gli assi scambiati rispetto ai precedenti, con la temperatura in ordinata, il che va verificato prima di leggerlo.
+Al crescere della temperatura il ferro passa dalla forma $\alpha$, cubica a corpo centrato, alla forma $\gamma$, cubica a facce centrate, e infine di nuovo a una forma cubica a corpo centrato.
+Si noti che le due strutture cubiche non differiscono per la forma della cella, che resta un cubo, ma per il numero di atomi che essa contiene e quindi per l'efficienza dell'impacchettamento, maggiore nella forma a facce centrate.
+Sono transizioni fra fasi solide diverse a tutti gli effetti, con i loro calori latenti, e sono alla base del trattamento termico degli acciai.
+ 
+\subsection{Carbonio e metastabilità}
+ 
+Il diagramma del carbonio introduce un fenomeno che i diagrammi precedenti non mostrano.
+Nelle condizioni ambientali la fase termodinamicamente stabile è la grafite, e il diamante si trova in una regione nella quale non è stabile: la sua formazione richiede pressioni dell'ordine dei gigapascal.
+Eppure i diamanti esistono a pressione atmosferica e non si trasformano in grafite.
+ 
+La ragione è che la termodinamica stabilisce quale sia lo stato più stabile ma non dice nulla sulla velocità con cui esso viene raggiunto.
+La conversione del diamante in grafite richiede di rompere e riformare l'intera rete di legami covalenti, processo con una barriera cinetica enorme, e la sua velocità a temperatura ambiente è talmente bassa da essere inosservabile.
+Si dice allora che il diamante è in uno stato metastabile\mkeyword{metastabilità}, cioè non è nel minimo assoluto dell'energia libera ma è intrappolato in un minimo locale dal quale non riesce a uscire.
+Nel diagramma queste regioni si indicano con tratteggi, per segnalare che vi si trova una fase che non è quella stabile.

@@ -1,0 +1,83 @@
+\chapter{Equilibrio}
+
+Nel capitolo precedente abbiamo stabilito che, a temperatura e pressione costanti, una reazione procede finché l'energia libera di Gibbs diminuisce e si arresta nel suo minimo, dove vale $\sum_i \nu_i\mu_i = 0$, e da questa condizione abbiamo ricavato la relazione fondamentale $\Delta G^0 = -RT\ln K$.
+Resta ora da capire che cosa accada quando un sistema già all'equilibrio viene perturbato dall'esterno, e come la posizione dell'equilibrio dipenda dalle condizioni imposte.
+La risposta qualitativa è nota come principio di Le Châtelier, ma conviene ricavarla dalla termodinamica anziché assumerla, perché nella formulazione discorsiva è facile applicarla dove non vale.
+
+\section{Il quoziente di reazione}
+
+Quando le pressioni parziali o le concentrazioni non sono quelle di equilibrio, la combinazione che nella condizione di equilibrio definiva $K$ conserva un significato e prende il nome di quoziente di reazione\mkeyword{quoziente di reazione}.
+Per una reazione generica $aA + bB \rightleftharpoons cC + dD$ esso vale
+\begin{equation}
+    Q = \frac{[C]^{c}[D]^{d}}{[A]^{a}[B]^{b}} ,
+    \label{eq:quoziente}
+\end{equation}
+con la stessa struttura di $K$ ma calcolato con le concentrazioni istantanee anziché con quelle all'equilibrio.
+Ripercorrendo la derivazione del capitolo precedente senza imporre l'annullamento della derivata si ottiene infatti
+\begin{equation}
+    \left(\frac{\partial G}{\partial \xi}\right)_{T,P} = \Delta G^0 + RT\ln Q = RT\ln\frac{Q}{K} ,
+    \label{eq:isoterma_reazione}
+\end{equation}
+dove la seconda uguaglianza segue sostituendo $\Delta G^0 = -RT\ln K$.
+La \eqref{eq:isoterma_reazione} è la formulazione quantitativa di tutto ciò che segue, e si legge senza ambiguità: se $Q < K$ la derivata è negativa e la reazione procede verso i prodotti, se $Q > K$ è positiva e la reazione retrocede verso i reagenti, se $Q = K$ il sistema è all'equilibrio.
+
+\section{Il principio di Le Châtelier}
+
+Il principio di Le Châtelier\mkeyword{principio di Le Châtelier} afferma che un sistema all'equilibrio, se perturbato, evolve nella direzione che si oppone alla perturbazione.
+È un enunciato euristico ma efficace, e nei casi che seguono si vedrà come discenda dalla \eqref{eq:isoterma_reazione}.
+
+\subsection{Aggiunta o sottrazione di specie}
+
+Aggiungendo un reagente a composizione altrimenti invariata, il denominatore della \eqref{eq:quoziente} cresce e $Q$ diminuisce, cosicché $Q < K$ e la reazione procede verso i prodotti: l'equilibrio si sposta dalla parte opposta rispetto a quella dell'aggiunta.
+Sottraendo una specie accade il contrario, e l'equilibrio si sposta dalla parte da cui la specie è stata tolta, in modo da rimpiazzarla almeno parzialmente.
+
+\subsection{Effetti di volume e pressione}
+
+Una compressione riduce il volume e aumenta la pressione totale, e il sistema reagisce spostandosi verso il lato che occupa meno volume, cioè quello con meno moli di gas.
+La ragione, in termini della \eqref{eq:quoziente}, è che comprimendo di un fattore $\lambda$ tutte le concentrazioni crescono dello stesso fattore, ma numeratore e denominatore contengono potenze diverse, e $Q$ viene moltiplicato per $\lambda^{\Delta n}$ con $\Delta n = (c+d) - (a+b)$.
+Ne segue che soltanto le reazioni con $\Delta n \neq 0$ risentono della pressione, mentre quelle che avvengono a numero di moli gassose invariato ne sono del tutto insensibili.
+
+\subsection{Effetto della temperatura}
+
+La temperatura è l'unica variabile che modifica il valore stesso della costante di equilibrio, e non soltanto la composizione che la soddisfa.
+Il modo rapido di ricordare il verso dello spostamento consiste nel trattare il calore come se fosse un reagente o un prodotto: in una reazione endotermica, con $\Delta H > 0$, il calore compare fra i reagenti, quindi scaldando l'equilibrio si sposta verso i prodotti; in una reazione esotermica, con $\Delta H < 0$, il calore compare fra i prodotti e scaldando l'equilibrio retrocede verso i reagenti.
+Raffreddando accade il contrario in entrambi i casi.
+
+\section{Giustificazione formale dell'effetto della temperatura}
+
+Una reazione avviene spontaneamente se aumenta l'entropia dell'universo, cioè se $\Delta S_{tot} = \Delta S_{sis} + \Delta S_{amb} > 0$, e poiché nell'ambiente non avvengono reazioni ma solo assorbimento o cessione di calore, si ha $\Delta S_{amb} = -\Delta H_{sis}/T$.
+
+Moltiplicando per $-T$, operazione che a temperatura costante inverte il verso della disuguaglianza e ricordando la definizione di energia libera di Gibbs \eqref{eq:def_gibbs} si ottiene
+
+\begin{equation}
+    \Delta G = -T\Delta S_{tot} = \Delta H_{sis} - T\Delta S_{sis} < 0 ,
+    \label{eq:legame_G_Stot}
+\end{equation}
+
+cioè il criterio basato su $G$ è la traduzione del secondo principio nelle sole grandezze del sistema.
+
+All'equilibrio
+
+\begin{equation}
+    \Delta G^0_r = \Delta H^0_r - T\Delta S^0_r = -RT\ln K  \implies \ln K = -\frac{\Delta H^0_r}{RT} + \frac{\Delta S^0_r}{R} .
+    \label{eq:lnK}
+\end{equation}
+
+Il termine entropico non dipende dalla temperatura, mentre quello entalpico si attenua al crescere di $T$: è quest'ultimo a produrre tutta la dipendenza di $K$ dalla temperatura.
+
+\subsection{Equazione di van't Hoff}
+
+Derivando la \eqref{eq:lnK} rispetto alla temperatura, e assumendo $\Delta H^0_r$ costante nell'intervallo considerato, si ottiene
+
+\begin{equation}
+    \frac{\partial \ln K}{\partial T} = \frac{\Delta H^0_r}{RT^2} ,
+    \label{eq:vanthoff_diff}
+\end{equation}
+
+e integrando fra due temperature si ricava l'equazione di van 't Hoff\mkeyword{equazione di van 't Hoff}
+\begin{equation}
+    \ln\frac{K(T_2)}{K(T_1)} = -\frac{\Delta H^0_r}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right) .
+    \label{eq:vanthoff}
+\end{equation}
+La \eqref{eq:vanthoff} conferma la regola qualitativa: per una reazione esotermica, con $\Delta H^0_r < 0$, passando a $T_2 > T_1$ la costante di equilibrio diminuisce, mentre per una reazione endotermica aumenta.
+Si osservi inoltre che la dipendenza è in $1/T$, cosicché la differenza $1/T_2 - 1/T_1$ si riduce rapidamente al crescere delle temperature: alle alte temperature la stessa variazione assoluta di $T$ produce una variazione di $K$ molto minore.

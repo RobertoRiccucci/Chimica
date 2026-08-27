@@ -1,0 +1,154 @@
+\chapter{Cinetica chimica}
+
+La termodinamica non comprende il tempo che le reazioni possono impiegare a completarsi. La cinetica chimica\mkeyword{cinetica chimica} studia la velocità delle reazioni chimiche. 
+
+Se una reazione è possibile dal punto di vista termodinamico non è detto che avvenga in un tempo ragionevole.\\
+
+Si va a definire come velocità di reazione\mkeyword{velocità di reazione} la derivata parziale di un prodotto rispetto al tempo 
+
+\begin{equation}
+    v_a = \frac{\partial [ A ]}{\partial t}
+\end{equation}
+
+Quando si tratta una reazione si deve fare attenzione a imporre la conservazione della massa. Per una reazione $A \to B$ vale che 
+
+\begin{equation}
+    \frac{\partial [A]}{\partial t} + \frac{\partial [B]}{\partial t} = 0 \implies \frac{\partial [A]}{\partial t} = - \frac{\partial [B]}{\partial t}
+\end{equation}
+
+In base all'equazione differenziale che determina la concentrazione di un prodotto rispetto al tempo si possono dividere le reazioni in tre categorie: reazioni di ordine zero, di ordine uno e di ordine due.\footnote{In realtà esistono reazione di ordine superiori al secondo ma sono rare perciò non ne parleremo}
+
+\section{Ordine zero}
+
+Si parla di reazioni di ordine zero quando l'equazione differenziale che regola la concentrazione di un elemento è
+
+\begin{equation}
+    \frac{\partial [A]}{\partial t} = - k \implies [A] = [A_0] - kt
+\end{equation}
+
+Dove $k$ prende il nome di costante cinetica\mkeyword{costante cinetica}.
+
+In questo caso però la reazione ha bisogno di siti dove avvenire, che prendono il nome di siti reattivi\mkeyword{siti reattivi}. \\
+
+Un esempio biologico sono gli enzimi, cioè proteine specializzate a far avvenire certe reazioni. 
+
+Un altro esempio è la marmitta catitica, la quale presenta un metallo spugnoso sulla cui superficie avviene la reazione. 
+
+\newpage
+
+\section{Ordine uno}
+
+In questo caso la velocità di reazione dipende linearmente dalla concentrazione dell'elemento, tuttavia è necessario fare una distinzione tra reazioni reversibili e irreversibili.
+
+\subsection{Irreversibile}
+
+Nel caso in cui la reazione sia irreversibile, vale che 
+
+\begin{equation}
+    \frac{\partial [A]}{\partial t} = - k [A] \implies [A] = [A]_0 \cdot e^{-k(t - t_0)}
+    \label{ordine_uno_irr}
+\end{equation}
+
+In questo caso è possibile sostituire la costante cinetica con un'analoga quantità più utile dal punto di vista pratico, che prende il nome di tempo di dimezzamento\mkeyword{tempo di dimezzamento}. 
+
+Ponendo $[A] = 1/2 \ [A]_0$ e considerando $t_0 = 0$ si ottiene facilmente che $t_{1/2} = \ln(2)/k$.
+
+Un esempio di reazione irreversibile del primo ordine si ha nel caso dei decadimenti radioattivi in cui alcuni nuclei di elementi instabili si trasformano in altri nuclei. Un esempio è $^{18} F$ che emette un positrone e diventa $^{18} 0$
+
+\begin{equation}
+    ^{18} F \to e^{+} + \ ^{18}O 
+\end{equation}
+
+\subsection{Reversibile}
+
+Nel caso in cui la reazione si reversibile le cose si complicano. Consideriamo una reazione del tipo 
+
+\begin{equation}
+    A \xrightleftharpoons[k_2]{k_1} B
+\end{equation}
+
+L'equazione che determina la concentrazione di $[A]$ e $[B]$ è 
+
+\begin{equation}
+    \left\{\begin{array}{l}
+        \frac{\partial[A]}{\partial t}=-k_1[A]+k_2[B] \\
+        \frac{\partial[B]}{\partial t}=-k_1[B]+k_1[A]
+    \end{array}\right.
+\end{equation}
+
+In questo caso $[A]$ diminuisce esponenzialmente fino all'equilibrio (senza scomparire), mentre $[B]$ cresce fino all'equilibrio. 
+
+\section{Ordine due}
+
+In questo caso la velocità dipende dal prodotto di due concentrazioni. Per una reazione irreversibile del tipo $[A] + [B] \to C$ abbiamo che
+
+\begin{equation}
+    \frac{\partial [A]}{\partial t} = - k \ [A] \ [B]
+\end{equation}
+
+Per evitare complicazioni matematiche consideriamo il caso particolare $2A \to C$ in cui si ha 
+
+\begin{equation}
+    \frac{\partial [A]}{\partial t} = - k \ [A]^2 \implies \frac{1}{[A]} = \frac{1}{[A]_0} + kt
+\end{equation}
+
+\section{Profilo di reazione}
+
+Nonostante l'ordine sia una caratteristica specifica e unica per ciascuna reazione non è possibile desumerlo dalle formule della reazione. 
+
+Il motivo è che una reazione chimica è fatta di più passaggi intermedi e quello che dermina l'ordine di reazione è quello più lento, detto stadio lento\mkeyword{stadio lento}. \\
+
+Uno strumento utile per analizzare gli stadi intermedi di una reazione è il profilo di reazione\mkeyword{profilo di reazione}, un grafico che ha sulle ascisse la coordinata di reazione $\xi$ e sulle ordinate l'energia del sistema. 
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[x=0.85cm, y=2.1cm, >={Latex[length=2mm]}]
+        % --- macro riutilizzabili -----------------------------------------
+        \def\profilo{1.0-0.62*pow(\x,2)/(pow(\x,2)+16)
+            +0.75*exp(-pow((\x-3)/1.0,2))
+            +1.70*exp(-pow((\x-7)/1.1,2))}
+        \def\etichetta#1#2#3#4{%
+            \node[font=\footnotesize, anchor=#2] (L) at (#1) {#3};
+            \draw[->, shorten >=1pt] (L) -- (#4);
+        }
+        % --- assi ---------------------------------------------------------
+        \draw[->] (-0.3,0) -- (11.2,0) node[below left] {$\xi$};
+        \draw[->] (-0.3,0) -- (-0.3,2.65) node[left] {$E$};
+        % --- curva --------------------------------------------------------
+        \draw[domain=0.2:10.6, samples=300, smooth, thick] plot (\x, {\profilo});
+        % --- etichette -----------------------------------------------------
+        \node[font=\footnotesize, anchor=west] (TS) at (2.10,2.48) {Stati di transizione};
+        \draw[->, shorten >=1pt] (TS.south west) -- (2.95,1.72);
+        \draw[->, shorten >=1pt] (TS.east) -- (6.85,2.36);
+        \etichetta{1.20,0.50}{north}{Reagenti}{1.00,0.86}
+        \etichetta{5.00,0.36}{north}{Intermedio}{5.00,0.68}
+        \etichetta{9.20,0.85}{south}{Prodotti}{10.10,0.44}
+    \end{tikzpicture}
+    \caption{Profilo energetico di una reazione a due stadi.}
+    \label{fig:profilo_energia}
+\end{figure}
+
+Si nota che il grafico presenta minimi e massimo relativi, che prendono rispettivamente il nome di intermedi\mkeyword{intermedi} e stati di transizione\mkeyword{stati di transizione}. 
+
+A partire da questi è possibile definire l'energia di attivazione\mkeyword{energia di attivazione} come la differenza di energia del sistema tra uno stato di attivazione e l'intermedio immediatamente precedente. 
+Possiamo avere diverse energia di attivazione tra reagenti e prodotti, tuttavia quella più importante è quella in cui si ha la maggiore differenza di energia, che corrisponde allo stadio lento e che quindi determina la velocità della reazione. 
+
+\subsection{Equazione di Arrhenius}
+
+Un'equazione sperimentale particolarmente importante per la descrzione della velocità di una reazione è l'equazione di Arrhenius. 
+
+Questa descrive la variazione della velocità di reazione in funzione della temperatura e contiene come paramentro l'energia di attivazione dello stadio lento 
+
+\begin{equation}
+    k(T) = A \ e^{-E_a/RT}
+    \label{equazione_Arrhenius}
+\end{equation}
+
+In termini fisica $A$ rappresenta la sezione d'urto e misura la probabilità che le molecole diano luogo a urti reattivi, cioè urti che portano alla rezione. \\
+
+\subsection{Catalisi}
+
+Una reazione può essere favorita da una bassa energia di attivazione e un'alta probabilità di urti reattivi mentre può essere sfavorita da un'altra energia di attivazione e una bassa probabilità di urti reattivi. \\
+
+Allora un modo per favorire una reazione e farla avvenire più velocemente è la catalisi, la quale consiste nell'usare sostanze, chiamate catalizzatori\mkeyword{catalizzatori}, che permettono alla reazione di avvenire con una più bassa energia di arrivazione. \' E importante sottolineare che i catalizzatori non compaiono nella stechiometria della reazione in quanto rigurardano solo i passaggi intermedi. 
+
