@@ -36,7 +36,16 @@ chapters/
   capitolo_2.tex       Proprietà degli elementi
   capitolo_3.tex       Legami
   capitolo_4.tex       Rappresentazione delle molecole
-  capitolo_5.tex       (in lavorazione)
+  capitolo_5.tex       Interazioni intermolecolari
+  capitolo_6.tex       Teoria cinetica dei gas
+  capitolo_7.tex       Funzioni Termodinamiche
+  capitolo_8.tex       Equilibrio
+  capitolo_9.tex       Termodinamica delle transizioni di fase
+  capitolo_10.tex      Cinetica chimica
+  capitolo_11.tex      Soluzioni
+  capitolo_12.tex      Acidi e basi
+  capitolo_13.tex      Elettrochimica
+  capitolo_14.tex      Colore dei sali 
 foto/                  immagini e figure
 build/                 output della compilazione (PDF)
 ```
@@ -53,7 +62,7 @@ Il PDF risultante è `build/Chimica.pdf`.
 
 ## Stato
 
-Lavoro in corso — versione **v0.1**. I capitoli vengono aggiunti e rivisti man mano.
+Lavoro in corso — versione **v0.1**.
 
 ## Contatti
 

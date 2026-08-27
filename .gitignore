@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.toc
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+
+# Cartelle di build superflue/duplicate (non il PDF finale in build/)
+build_tmp/
+%OUTDIR%/
